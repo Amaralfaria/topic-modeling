@@ -230,3 +230,4 @@ ssh-script.sh
 topic-modeling/*
 .vscode/*
 pyrightconfig.json
+library/*

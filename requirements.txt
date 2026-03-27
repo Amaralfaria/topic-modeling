@@ -1,3 +1,5 @@
-pymongo==4.16.0
-python-dotenv==1.2.2
-sshtunnel==0.4.0
+pymongo==3.13.0
+python-dotenv==1.0.1
+gensim>=3.0.0,<4.0.0
+contextualized-topic-models<=2.4.0
+bertopic==0.16.4

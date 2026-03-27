@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Union
 from pymongo import MongoClient
 from pymongo.database import Database
 from sshtunnel import SSHTunnelForwarder
@@ -16,10 +16,10 @@ class MongoConnection:
         if mongo_db_port is None:
             raise ValueError("porta não definida")
 
-        self._client: MongoClient[Any] = MongoClient('mongodb://%s:%s/' % (os.getenv("MONGO_DB_HOST"), int(mongo_db_port)))
+        self._client: MongoClient = MongoClient('mongodb://%s:%s/' % (os.getenv("MONGO_DB_HOST"), int(mongo_db_port)))
 
-    def get_instagram_connection(self) -> Database[Any]:
-        db_name: str | None = os.getenv("MONGO_DB_INSTAGRAM_DATABASE")
+    def get_instagram_connection(self) -> Database:
+        db_name: Union[str, None] = os.getenv("MONGO_DB_INSTAGRAM_DATABASE")
         if db_name is None:
             raise ValueError("MONGO_DB_INSTAGRAM_DATABASE não definida")
         
