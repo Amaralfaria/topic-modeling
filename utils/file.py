@@ -47,3 +47,25 @@ def save_jsonl(
                 outfile.write(row_json)
             else:
                 outfile.write(f"\n{row_json}")
+
+
+def txt_to_octis_format(filepath):
+    meus_topicos = []
+    
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for linha in f:
+            # Remove espaços em branco no início/fim e pula linhas vazias
+            linha = linha.strip()
+            if not linha:
+                continue
+            
+            # Divide a linha por espaços ou tabs
+            partes = linha.split()
+            
+            # O primeiro item é o ID do tópico (ex: 0, 1, 2...), 
+            # então pegamos do segundo item em diante
+            palavras = partes[1:]
+            
+            meus_topicos.append(palavras)
+            
+    return {"topics": meus_topicos}
