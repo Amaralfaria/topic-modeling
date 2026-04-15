@@ -93,3 +93,19 @@ def atribuir_topicos_e_salvar(caminho_entrada, caminho_saida, modelo_lda, corpus
             f.write(json.dumps(item, ensure_ascii=False) + '\n')
 
     print(f"Processamento concluído! Resultados salvos em: {caminho_saida}")
+
+
+def salvar_legenda_topicos(modelo_lda, caminho_txt, num_palavras=10):
+    """
+    Gera um arquivo de texto com a lista de tópicos e suas palavras principais.
+    """
+    # O método show_topics retorna uma lista de (id_do_topico, "0.01*palavra1 + 0.02*palavra2...")
+    topicos = modelo_lda.show_topics(num_topics=-1, num_words=num_palavras, formatted=True)
+    
+    with open(caminho_txt, 'w', encoding='utf-8') as f:
+        f.write("=== LEGENDA DOS TÓPICOS GENERADOS ===\n\n")
+        for id_topico, palavras in topicos:
+            linha = f"Tópico {id_topico}: {palavras}\n"
+            f.write(linha)
+            
+    print(f"Legenda de tópicos salva em: {caminho_txt}")
