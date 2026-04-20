@@ -100,12 +100,18 @@ def salvar_legenda_topicos(modelo_lda, caminho_txt, num_palavras=10):
     Gera um arquivo de texto com a lista de tópicos e suas palavras principais.
     """
     # O método show_topics retorna uma lista de (id_do_topico, "0.01*palavra1 + 0.02*palavra2...")
-    topicos = modelo_lda.show_topics(num_topics=-1, num_words=num_palavras, formatted=True)
-    
+    topicos = modelo_lda.show_topics(num_topics=-1, num_words=num_palavras, formatted=False)
+
     with open(caminho_txt, 'w', encoding='utf-8') as f:
-        f.write("=== LEGENDA DOS TÓPICOS GENERADOS ===\n\n")
-        for id_topico, palavras in topicos:
-            linha = f"Tópico {id_topico}: {palavras}\n"
-            f.write(linha)
+        for id_topico, lista_palavras in topicos:
+            # lista_palavras é algo como: [('trump', 0.031), ('eua', 0.027)...]
+            # Extraímos apenas o primeiro elemento de cada tupla (a palavra)
+            palavras_apenas = [palavra for palavra, peso in lista_palavras]
             
+            # Criamos a linha: "ID palavra1 palavra2 palavra3..."
+            # Se preferir com vírgulas, use: ", ".join(palavras_apenas)
+            linha = f"{id_topico} {' '.join(palavras_apenas)}\n"
+            
+            f.write(linha)
+
     print(f"Legenda de tópicos salva em: {caminho_txt}")
