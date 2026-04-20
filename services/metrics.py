@@ -92,13 +92,12 @@ def calculate_purity(true_col, pred_col, df):
     return (purity, inverse_purity, harmonic_purity)
 
 
-def get_npmi(caminho_jsonl, topics_path, coluna_texto):
+def get_npmi(caminho_jsonl, topics_path, coluna_tokens):
     documentos = []
     with open(caminho_jsonl, 'r', encoding='utf-8') as f:
         for linha in f:
             dados = json.loads(linha)
-            # O artigo assume que o texto já passou por lematização/limpeza [cite: 139]
-            documentos.append(dados[coluna_texto].split())
+            documentos.append(dados[coluna_tokens].split())
 
     id2word = Dictionary(documentos)
 
