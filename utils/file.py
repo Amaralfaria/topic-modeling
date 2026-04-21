@@ -1,53 +1,6 @@
-from typing import Union, Any, Optional, Dict, List
 from pathlib import Path
+from datetime import datetime
 import json
-from scipy import sparse
-
-def save_json(obj: Any, fpath: Union[str, Path], indent: Optional[int] = None):
-    with open(fpath, "w") as outfile:
-        json.dump(obj, outfile, indent=indent)
-
-def save_jsonl(
-    metadata: List[Dict[str, Any]],
-    outpath: Union[str, Path],
-    dtm: Optional[sparse.csr_matrix] = None,
-    vocab: Optional[Dict[str, int]] = None,
-):
-    """
-    Save a list of dictionaries to a jsonl file. If `dtm` and `vocab` are provided,
-    save document-term matrix as a dictionary in the following format, where each
-    row is a document:
-    {
-        "id": <doc_1>,
-        <other metadata>: ...
-        "tokenized_counts": {
-            <word_2>: <count_of_word_2_in_doc_1>,
-            <word_6>: <count_of_word_6_in_doc_1>,
-            ...
-        },
-    }
-    """
-
-    if dtm is not None and vocab is None:
-        raise ValueError("`vocab` must be provided if `dtm` is provided")
-
-    if vocab is not None : 
-        inv_vocab = dict(zip(vocab.values(), vocab.keys()))
-    
-    with open(outpath, mode="w") as outfile:
-        for i, data in enumerate(metadata):
-            if dtm is not None and vocab is not None:
-                row = dtm[i] #type: ignore
-                words_in_doc = [inv_vocab[idx] for idx in row.indices] #type: ignore
-                counts = [int(v) for v in row.data]   #type: ignore
-                word_counts = Dict(zip(words_in_doc, counts)) #type: ignore
-                data.update({"tokenized_counts": word_counts}) #type: ignore
-            row_json = json.dumps(data)
-            if i == 0:
-                outfile.write(row_json)
-            else:
-                outfile.write(f"\n{row_json}")
-
 
 
 def get_data_from_column(document_path, desired_column):
@@ -57,7 +10,7 @@ def get_data_from_column(document_path, desired_column):
             yield dados[desired_column]
 
 
-def save_document_topics(original_data_path, output_path, topics_list):
+def add_column_to_jsonl(original_data_path, output_path, new_column_values, column_name):
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
 
     with open(original_data_path, 'r', encoding='utf-8') as f_in, \
@@ -65,14 +18,37 @@ def save_document_topics(original_data_path, output_path, topics_list):
         
         for i, linha in enumerate(f_in):
             dados = json.loads(linha)
-            dados["topic_id"] = int(topics_list[i])
+            dados[column_name] = int(new_column_values[i])
             f_out.write(json.dumps(dados, ensure_ascii=False) + '\n')
+
+def save_json(path, object):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(object, f, indent=4, ensure_ascii=False)
+
+def save_metrics(output_path, model_name, params, metrics, topics):
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_data = {
+        "metadata": {
+            "model": model_name,
+            "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "parameters": params
+        },
+        "metrics": metrics,
+        "topics": {str(id_t): words for id_t, words in topics}
+    }
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(output_data, f, indent=4, ensure_ascii=False)
 
 def save_topics(topics_list, output_path):
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         for id_topico, words_list in topics_list:
             f.write(f"{id_topico} {' '.join(words_list)} \n")
+
+def load_json(path):
+    with open(path) as f:
+        return json.load(f)
 
 
 def txt_to_octis_format(filepath):

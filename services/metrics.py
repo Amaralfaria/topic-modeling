@@ -33,15 +33,13 @@ class MetricsService:
 
         return metrics.normalized_mutual_info_score(self._get_data()[self.ground_truth_column], self._get_data()[self.output_column])
 
-    def get_npmi(self, topics_path, coluna_tokens):
+    def get_npmi(self, topics, coluna_tokens):
         documentos = self._get_tokens(coluna_tokens)
 
         id2word = Dictionary(documentos)
 
-        dados_topicos = txt_to_octis_format(topics_path)["topics"] 
-
         cm = CoherenceModel(
-            topics=dados_topicos, 
+            topics=self._get_topics_data(topics), 
             texts=documentos, 
             dictionary=id2word, 
             coherence='c_npmi'
@@ -51,12 +49,13 @@ class MetricsService:
 
         return npmi_medio
 
-    def get_topic_diversity(self, topics_path, topk=10):
-        dados_topicos = txt_to_octis_format(topics_path) 
+    def get_topic_diversity(self, topics, topk=10):
         diversity_metric = TopicDiversity(topk=topk)
-        score = diversity_metric.score(dados_topicos)
-
-        return score
+        return diversity_metric.score(
+            {
+                "topics": self._get_topics_data(topics)
+            }
+        )
 
     def _calculate_purity(self):
         contingency_matrix = metrics.cluster.contingency_matrix(self._get_data()[self.ground_truth_column], self._get_data()[self.output_column])
@@ -84,3 +83,6 @@ class MetricsService:
 
     def _get_tokens(self, tokens_column):
         return [doc.split() for doc in get_data_from_column(self.result_file, tokens_column)]
+
+    def _get_topics_data(self, topics):
+        return [words for id_t, words in topics if int(id_t) >= 0]

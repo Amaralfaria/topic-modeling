@@ -1,0 +1,14 @@
+{
+    "experiments": [
+        {
+            "name": "EXP01",
+            "model": "LDA",
+            "dataset": "data/input/instagram/pre-processed-complete/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/lda",
+            "params": {"n_topics": 10}
+        }
+    ]
+}
