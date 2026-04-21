@@ -49,6 +49,32 @@ def save_jsonl(
                 outfile.write(f"\n{row_json}")
 
 
+
+def get_data_from_column(document_path, desired_column):
+    with open(document_path, 'r', encoding='utf-8') as f:
+        for linha in f:
+            dados = json.loads(linha)
+            yield dados[desired_column]
+
+
+def save_document_topics(original_data_path, output_path, topics_list):
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+
+    with open(original_data_path, 'r', encoding='utf-8') as f_in, \
+        open(output_path, 'w', encoding='utf-8') as f_out:
+        
+        for i, linha in enumerate(f_in):
+            dados = json.loads(linha)
+            dados["topic_id"] = int(topics_list[i])
+            f_out.write(json.dumps(dados, ensure_ascii=False) + '\n')
+
+def save_topics(topics_list, output_path):
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        for id_topico, words_list in topics_list:
+            f.write(f"{id_topico} {' '.join(words_list)} \n")
+
+
 def txt_to_octis_format(filepath):
     meus_topicos = []
     
@@ -62,6 +88,8 @@ def txt_to_octis_format(filepath):
             # Divide a linha por espaços ou tabs
             partes = linha.split()
             
+            if int(partes[0]) < 0:
+                continue
             # O primeiro item é o ID do tópico (ex: 0, 1, 2...), 
             # então pegamos do segundo item em diante
             palavras = partes[1:]

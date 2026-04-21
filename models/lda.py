@@ -1,56 +1,64 @@
 from gensim.models.wrappers import LdaMallet
 import json
 import gensim.corpora as corpora
+from utils.file import get_data_from_column
 
-path_to_mallet_binary = "library/mallet-2.1.0/bin/mallet"
+PATH_TO_MALLET = "library/mallet-2.1.0/bin/mallet"
 
-def get_lda(caminho_jsonl, coluna_texto, num_topicos):
-    """
-    Replica a configuração de LDA Mallet do artigo TopicGPT.
+class MalletLDA:
+    def __init__(self, caminho_documentos, coluna_tokens):
+        self.caminho_documentos = caminho_documentos
+        self.coluna_tokens = coluna_tokens
+        self.modelo = None
+        self.id2word = None
+        self.corpus = None
+        
+
+    def fit(self, num_topicos):
+        self.id2word = corpora.Dictionary(self._get_tokens())
+        
+        self.id2word.filter_extremes(
+            no_below=5, 
+            no_above=0.5, 
+            keep_n=15000
+        )
+
+        self.corpus = [self.id2word.doc2bow(text) for text in self._get_tokens()]
+
+        self.modelo = LdaMallet(
+            mallet_path=PATH_TO_MALLET,
+            corpus=self.corpus,
+            num_topics=num_topicos, 
+            id2word=self.id2word,
+            iterations=2000,         
+            optimize_interval=10,    
+            alpha=1.0,               
+        )
+
+        return self.modelo
     
-    Args:
-        caminho_jsonl (str): Caminho para o arquivo .jsonl
-        coluna_texto (str): Nome da chave no JSON que contém o texto pré-processado (lista de tokens    )
-        num_topicos (int): O 'k' desejado (Ex: 31 para Wiki ou 79 para Bills) [cite: 197]
-        path_mallet (str): Caminho para o binário do Mallet no sistema
-    """
-    
-    # 1. Carregamento dos dados
-    documentos = []
-    with open(caminho_jsonl, 'r', encoding='utf-8') as f:
-        for linha in f:
-            dados = json.loads(linha)
-            # O artigo assume que o texto já passou por lematização/limpeza [cite: 139]
-            documentos.append(dados[coluna_texto].split())
+    def get_document_topics(self):
+        return [self._get_most_likely_topic(dist) for dist in self._get_topic_distributions()]
 
-    # 2. Preparação do Vocabulário (Dicionário)
-    id2word = corpora.Dictionary(documentos)
-    
-    # Restrição rigorosa do artigo: Vocabulário |V| de 15.000 termos 
-    id2word.filter_extremes(
-        no_below=5, 
-        no_above=0.5, 
-        keep_n=15000
-    )
-    for i in range(1,5):
-        print(documentos[i])
+    def get_topics(self):
+        return [
+                (id_topico, [palavra for palavra, _ in lista_palavras])
+                for id_topico, lista_palavras in self.modelo.show_topics(
+                    num_topics=-1, num_words=10, formatted=False
+                )
+            ]
 
-    # 3. Criação do Corpus (Bag-of-Words)
-    corpus = [id2word.doc2bow(text) for text in documentos]
+    def _get_most_likely_topic(self, distribution):
+        return max(distribution, key=lambda x: x[1])[0]
 
-    # 4. Inicialização do Modelo com hiperparâmetros da Seção 4.2 do PDF
-    modelo = LdaMallet(
-        mallet_path=path_to_mallet_binary,
-        corpus=corpus,
-        num_topics=num_topicos, # k controlado para comparação justa [cite: 136]
-        id2word=id2word,
-        iterations=2000,        # Definido no artigo 
-        optimize_interval=10,   # Otimização a cada 10 intervalos 
-        alpha=1.0,              # Valor fixo de alfa 
-        # Nota: O Mallet usa um parâmetro interno para beta, o artigo fixa em 0.1 
-    )
+    def _get_topic_distributions(self):
+        return self.modelo[self.corpus]
 
-    return modelo, corpus, id2word
+    def _get_tokens(self):
+        for data in get_data_from_column(self.caminho_documentos, self.coluna_tokens):
+            yield data.split()
+
+
 
 def atribuir_topicos_e_salvar(caminho_entrada, caminho_saida, modelo_lda, corpus, nome_coluna="topico_lda"):
     """
