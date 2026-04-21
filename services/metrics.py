@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn import metrics
 import numpy as np
-from utils.file import txt_to_octis_format
 from gensim.corpora import Dictionary
 from gensim.models.coherencemodel import CoherenceModel
 from octis.evaluation_metrics.diversity_metrics import TopicDiversity
