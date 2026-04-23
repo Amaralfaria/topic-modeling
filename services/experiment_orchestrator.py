@@ -5,6 +5,7 @@ from utils.file import load_json, add_column_to_jsonl, save_json
 from sentence_transformers import SentenceTransformer
 from services.metrics import MetricsService
 from datetime import datetime
+import torch
 
 class ExperimentOrchestrator:
     def __init__(self, config_file):
@@ -14,23 +15,24 @@ class ExperimentOrchestrator:
 
     def run(self):
         for experiment in self._get_config()["experiments"]:
-            self._fit(experiment)
-            self.save_topic_assignment(experiment)
-            save_json(self._get_experiment_output(experiment), self.get_experiment_info(experiment))
+            for k in experiment["params"]["n_topics"]:
+                self._fit(experiment, k)
+                self.save_topic_assignment(experiment, k)
+                save_json(self._get_experiment_output(experiment, k), self.get_experiment_info(experiment, k))
 
-    def get_experiment_info(self, experiment):
+    def get_experiment_info(self, experiment, n_topics):
         return {
             "metadata": {
                 "model": experiment["model"],
                 "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 "parameters": experiment["params"]
             },
-            "metrics": self.get_metrics(experiment, self._get_result_output(experiment)),
+            "metrics": self.get_metrics(experiment, self._get_result_output(experiment, n_topics)),
             "topics": {str(id_t): words for id_t, words in self.model.get_topics()}
         }
 
-    def save_topic_assignment(self, experiment):
-        add_column_to_jsonl(experiment["dataset"], self._get_result_output(experiment), self.model.get_document_topics(), experiment["output_col"])
+    def save_topic_assignment(self, experiment, n_topics):
+        add_column_to_jsonl(experiment["dataset"], self._get_result_output(experiment, n_topics), self.model.get_document_topics(), experiment["output_col"])
 
     def get_metrics(self, experiment, result_path):
         metrics_service = MetricsService(result_path, experiment["output_col"], experiment.get("ground_truth_col"))
@@ -42,27 +44,30 @@ class ExperimentOrchestrator:
             "topic_diversity": metrics_service.get_topic_diversity(self.model.get_topics())
         }
 
-    def _fit(self, experiment):
+    def _fit(self, experiment, n_topics):
         if experiment["model"] == "LDA":
             self.model = MalletLDA(experiment["dataset"], experiment["tokens_col"])
-            self.model.fit(experiment["params"]["n_topics"])
+            self.model.fit(n_topics)
         elif experiment["model"] == "BERTopic":
-            self.model = Bertopic(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
-            self.model.fit(experiment["params"]["n_topics"], SentenceTransformer(experiment["params"]["embedding_model"]))
+            self.model = Bertopic(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"], self._get_processing_device())
+            self.model.fit(n_topics, SentenceTransformer(experiment["params"]["embedding_model"], device=self._get_processing_device()))
         elif experiment["model"] == "CTM":
             self.model = CTM(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
-            self.model.fit(experiment["params"]["n_topics"], experiment["params"]["embedding_model"], experiment["params"]["context_size"])
+            self.model.fit(n_topics, experiment["params"]["embedding_model"], experiment["params"]["context_size"], device=self._get_processing_device())
 
     def _get_config(self):
         if self.config == None:
             self.config = load_json(self.config_file)
         return self.config
     
-    def _get_result_output(self, experiment):
-        return self._get_output_dir(experiment) + "/result.jsonl"
+    def _get_result_output(self, experiment, n_topics):
+        return self._get_output_dir(experiment, n_topics) + "/result.jsonl"
 
-    def _get_experiment_output(self, experiment):
-        return self._get_output_dir(experiment) + "/experiment-data.json"
+    def _get_experiment_output(self, experiment, n_topics):
+        return self._get_output_dir(experiment, n_topics) + "/experiment-data.json"
 
-    def _get_output_dir(self, experiment):
-        return experiment["result_path"] + "/" + experiment["name"] + "/k-" + str(experiment["params"]["n_topics"])
+    def _get_output_dir(self, experiment, n_topics):
+        return experiment["result_path"] + "/" + experiment["name"] + "/k-" + str(n_topics)
+
+    def _get_processing_device(self):
+        return "cuda"
