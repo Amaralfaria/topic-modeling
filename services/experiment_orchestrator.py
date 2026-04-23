@@ -5,7 +5,6 @@ from utils.file import load_json, add_column_to_jsonl, save_json
 from sentence_transformers import SentenceTransformer
 from services.metrics import MetricsService
 from datetime import datetime
-import torch
 
 class ExperimentOrchestrator:
     def __init__(self, config_file):
@@ -49,11 +48,11 @@ class ExperimentOrchestrator:
             self.model = MalletLDA(experiment["dataset"], experiment["tokens_col"])
             self.model.fit(n_topics)
         elif experiment["model"] == "BERTopic":
-            self.model = Bertopic(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"], self._get_processing_device())
-            self.model.fit(n_topics, SentenceTransformer(experiment["params"]["embedding_model"], device=self._get_processing_device()))
+            self.model = Bertopic(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
+            self.model.fit(n_topics, SentenceTransformer(experiment["params"]["embedding_model"]))
         elif experiment["model"] == "CTM":
             self.model = CTM(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
-            self.model.fit(n_topics, experiment["params"]["embedding_model"], experiment["params"]["context_size"], device=self._get_processing_device())
+            self.model.fit(n_topics, experiment["params"]["embedding_model"], experiment["params"]["context_size"])
 
     def _get_config(self):
         if self.config == None:
