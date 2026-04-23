@@ -10,10 +10,10 @@ class CTM:
         self.model = None
         self.training_dataset = None
 
-    def fit(self, num_topicos, embedding_model, context_size):
+    def fit(self, num_topicos, embedding_model, context_size, device):
         qt = TopicModelDataPreparation(embedding_model)
         self.training_dataset = qt.fit(text_for_contextual=self._get_text(), text_for_bow=self._get_tokens())
-        self.model = CombinedTM(bow_size=len(qt.vocab), contextual_size=context_size, n_components=num_topicos, num_epochs=30)
+        self.model = CombinedTM(bow_size=len(qt.vocab), contextual_size=context_size, n_components=num_topicos, num_epochs=30, device=device)
         self.model.fit(self.training_dataset)
 
         return self.model
