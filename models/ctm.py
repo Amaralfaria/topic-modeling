@@ -1,6 +1,8 @@
 from contextualized_topic_models.models.ctm import CombinedTM
-from contextualized_topic_models.utils.data_preparation import TopicModelDataPreparation
 from utils.file import get_data_from_column
+from contextualized_topic_models.datasets.dataset import CTMDataset
+from sklearn.feature_extraction.text import CountVectorizer
+from sentence_transformers import SentenceTransformer
 
 class CTM:
     def __init__(self, caminho_entrada, coluna_texto, coluna_tokens):
@@ -11,10 +13,22 @@ class CTM:
         self.training_dataset = None
 
     def fit(self, num_topicos, embedding_model, context_size):
+        vectorizer = CountVectorizer(tokenizer=lambda x: x.split(), preprocessor=lambda x: x)
+        train_bow_embeddings = vectorizer.fit_transform(self._get_tokens())
+        
+        vocab = vectorizer.get_feature_names_out()
+        id2token = dict(enumerate(vocab))
 
-        qt = TopicModelDataPreparation(embedding_model)
-        self.training_dataset = qt.fit(text_for_contextual=self._get_text(), text_for_bow=self._get_tokens())
-        self.model = CombinedTM(bow_size=len(qt.vocab), contextual_size=context_size, n_components=num_topicos, num_epochs=1)
+        modelo_de_embedding = SentenceTransformer(embedding_model)
+        train_contextualized_embeddings = modelo_de_embedding.encode(self._get_text())
+
+        self.training_dataset = CTMDataset(
+            train_contextualized_embeddings, 
+            train_bow_embeddings, 
+            id2token
+        )
+
+        self.model = CombinedTM(bow_size=len(vocab), contextual_size=context_size, n_components=num_topicos, num_epochs=30)
         self.model.fit(self.training_dataset)
 
         return self.model
