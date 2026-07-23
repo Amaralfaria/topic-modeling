@@ -18,7 +18,7 @@ class Bertopic:
             vectorizer_model=vectorizer_model
         )
 
-        self.model.fit_transform(self._get_text())
+        self.model.fit_transform(self._get_tokens())
         self.model.update_topics(self._get_tokens(), vectorizer_model=vectorizer_model)
 
         return self.model
@@ -30,7 +30,7 @@ class Bertopic:
         return [
             (id, [word for word, _ in words_score])
             for id, words_score in self.model.get_topics().items()
-        ]
+            ]
 
     def _get_text(self):
         return list(get_data_from_column(self.documents_path, self.text_column))

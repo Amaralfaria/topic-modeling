@@ -1,6 +1,8 @@
 from models.lda import MalletLDA
 from models.bertopic import Bertopic
 from models.ctm import CTM
+from models.prodlda import ProdLDA
+from models.prodlda_artigo import ProdLDAArtigo
 from utils.file import load_json, add_column_to_jsonl, save_json
 from sentence_transformers import SentenceTransformer
 from services.metrics import MetricsService
@@ -11,13 +13,16 @@ class ExperimentOrchestrator:
         self.config_file = config_file
         self.config = None
         self.model = None
+        self.current_run = None
 
-    def run(self):
+    def run(self, n_runs=1):
         for experiment in self._get_config()["experiments"]:
-            for k in experiment["params"]["n_topics"]:
-                self._fit(experiment, k)
-                self.save_topic_assignment(experiment, k)
-                save_json(self._get_experiment_output(experiment, k), self.get_experiment_info(experiment, k))
+            for run in range(n_runs):
+                self.current_run = run
+                for k in experiment["params"]["n_topics"]:
+                    self._fit(experiment, k)
+                    self.save_topic_assignment(experiment, k)
+                    save_json(self._get_experiment_output(experiment, k), self.get_experiment_info(experiment, k))
 
     def get_experiment_info(self, experiment, n_topics):
         return {
@@ -53,6 +58,12 @@ class ExperimentOrchestrator:
         elif experiment["model"] == "CTM":
             self.model = CTM(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
             self.model.fit(n_topics, experiment["params"]["embedding_model"], experiment["params"]["context_size"])
+        elif experiment["model"] == "prodLDA":
+            self.model = ProdLDA(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
+            self.model.fit(n_topics, num_epochs=250, alfa=1, dropout=0.2)
+        elif experiment["model"] == "prodLDAArtigo":
+            self.model = ProdLDAArtigo(experiment["dataset"], experiment["raw_col"], experiment["tokens_col"])
+            self.model.fit(n_topics)
 
     def _get_config(self):
         if self.config == None:
@@ -66,7 +77,10 @@ class ExperimentOrchestrator:
         return self._get_output_dir(experiment, n_topics) + "/experiment-data.json"
 
     def _get_output_dir(self, experiment, n_topics):
-        return experiment["result_path"] + "/" + experiment["name"] + "/k-" + str(n_topics)
+        return experiment["result_path"] + "/" + experiment["name"] + self._get_experiment_letter() + "/k-" + str(n_topics)
+
+    def _get_experiment_letter(self):
+        return chr(self.current_run + 97)
 
     def _get_processing_device(self):
         return "cuda"

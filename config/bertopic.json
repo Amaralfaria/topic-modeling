@@ -1,0 +1,14 @@
+{
+    "experiments": [
+        {
+            "name": "EXP06-no-min",
+            "model": "BERTopic",
+            "dataset": "data/input/instagram/pre-processed-no-jornal/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/bertopic",
+            "params": {"n_topics": [10, 20, 30, 40, 50], "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2"}
+        }
+    ]
+}

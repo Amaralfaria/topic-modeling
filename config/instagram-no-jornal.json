@@ -1,0 +1,44 @@
+{
+    "experiments": [
+        {
+            "name": "EXP06",
+            "model": "LDA",
+            "dataset": "data/input/instagram/pre-processed-low-min/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/lda",
+            "params": {"n_topics": [10, 20, 30, 40, 50]}
+        },
+        {
+            "name": "EXP06",
+            "model": "CTM",
+            "dataset": "data/input/instagram/pre-processed-low-min/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/ctm",
+            "params": {"n_topics": [10, 20, 30, 40, 50], "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2", "context_size": 384}
+        },
+        {
+            "name": "EXP06",
+            "model": "BERTopic",
+            "dataset": "data/input/instagram/pre-processed-low-min/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/bertopic",
+            "params": {"n_topics": [10, 20, 30, 40, 50], "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2"}
+        },
+            {
+            "name": "EXP06",
+            "model": "prodLDA",
+            "dataset": "data/input/instagram/pre-processed-low-min/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/prodlda",
+            "params": {"n_topics": [10, 20, 30, 40, 50]}
+        }
+    ]
+}

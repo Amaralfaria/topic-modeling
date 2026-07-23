@@ -28,7 +28,7 @@ class CTM:
             id2token
         )
 
-        self.model = CombinedTM(bow_size=len(vocab), contextual_size=context_size, n_components=num_topicos, num_epochs=30)
+        self.model = CombinedTM(bow_size=len(vocab), contextual_size=context_size, n_components=num_topicos, num_epochs=250)
         self.model.fit(self.training_dataset)
 
         return self.model

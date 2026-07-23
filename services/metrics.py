@@ -85,3 +85,38 @@ class MetricsService:
 
     def _get_topics_data(self, topics):
         return [words for id_t, words in topics if int(id_t) >= 0]
+
+    def get_npmi_per_topic(self, topics, coluna_tokens):
+            """
+            Calcula o NPMI individual para cada tópico e retorna uma lista de tuplas
+            (id_topico, score_npmi) ordenada crescentemente pelo ID do tópico.
+            """
+            documentos = self._get_tokens(coluna_tokens)
+            id2word = Dictionary(documentos)
+
+            # Filtra tópicos de ruído (ID < 0) e garante a ordenação pelo ID
+            topicos_validos = sorted(
+                [(int(id_t), words) for id_t, words in topics if int(id_t) >= 0],
+                key=lambda x: x[0]
+            )
+
+            # Isola apenas as palavras para submeter ao modelo do Gensim
+            palavras_dos_topicos = [words for id_t, words in topicos_validos]
+
+            cm = CoherenceModel(
+                topics=palavras_dos_topicos, 
+                texts=documentos, 
+                dictionary=id2word, 
+                coherence='c_npmi'
+            )
+
+            # O retorno é uma lista de floats na mesma ordem de 'palavras_dos_topicos'
+            scores_npmi = cm.get_coherence_per_topic()
+
+            # Combina o ID original do tópico com o seu escore calculado
+            resultados = [
+                (topicos_validos[i][0], score) 
+                for i, score in enumerate(scores_npmi)
+            ]
+
+            return resultados 

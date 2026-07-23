@@ -1,0 +1,68 @@
+{
+    "experiments": [
+        {
+            "name": "EXP04",
+            "model": "CTM",
+            "dataset": "data/input/instagram/pre-processed-complete/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/ctm",
+            "params": {"n_topics": [10, 20, 30, 40, 50], "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2", "context_size": 384}
+        },
+        {
+            "name": "EXP04",
+            "model": "prodLDA",
+            "dataset": "data/input/instagram/pre-processed-complete/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "result_path": "data/output/instagram/prodlda",
+            "params": {"n_topics": [10, 20, 30, 40, 50]}
+        },
+        {
+            "name": "EXP04",
+            "model": "CTM",
+            "dataset": "data/input/bills/pre-processed/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "summary",
+            "output_col": "topic_id",
+            "ground_truth_col": "topic",
+            "result_path": "data/output/bills/ctm",
+            "params": {"n_topics": [21], "embedding_model": "all-MiniLM-L6-v2", "context_size": 384}
+        },
+        {
+            "name": "EXP04",
+            "model": "prodLDA",
+            "dataset": "data/input/bills/pre-processed/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "summary",
+            "output_col": "topic_id",
+            "ground_truth_col": "topic",
+            "result_path": "data/output/bills/prodlda",
+            "params": {"n_topics": [21]}
+        },
+        {
+            "name": "EXP04",
+            "model": "CTM",
+            "dataset": "data/input/wiki-text/pre-processed/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "ground_truth_col": "category",
+            "result_path": "data/output/wiki-text/ctm",
+            "params": {"n_topics": [45], "embedding_model": "all-MiniLM-L6-v2", "context_size": 384}
+        },
+        {
+            "name": "EXP04",
+            "model": "prodLDA",
+            "dataset": "data/input/wiki-text/pre-processed/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "text",
+            "output_col": "topic_id",
+            "ground_truth_col": "category",
+            "result_path": "data/output/wiki-text/prodlda",
+            "params": {"n_topics": [45]}
+        }
+    ]
+}

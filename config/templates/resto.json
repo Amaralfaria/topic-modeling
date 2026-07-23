@@ -1,0 +1,15 @@
+{
+    "experiments": [
+        {
+            "name": "EXP02",
+            "model": "prodLDA-octis",
+            "dataset": "data/input/bills/pre-processed/train.metadata.jsonl",
+            "tokens_col": "tokenized_text",
+            "raw_col": "summary",
+            "output_col": "topic_id",
+            "ground_truth_col": "topic",
+            "result_path": "data/output/bills/prodlda-octis",
+            "params": {"n_topics": [21]}
+        }
+    ]
+}
