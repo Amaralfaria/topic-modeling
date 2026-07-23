@@ -1,0 +1,144 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-26 12:55:49",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.13374124118382202,
+        "topic_diversity": 0.84
+    },
+    "topics": {
+        "0": [
+            "bolsonaro",
+            "stf",
+            "ministro",
+            "ex-presidente",
+            "julgamento",
+            "jair",
+            "moraes",
+            "supremo_tribunal_federal",
+            "presidente",
+            "alexandre"
+        ],
+        "1": [
+            "saúde",
+            "metanol",
+            "casos",
+            "intoxicação",
+            "bebidas",
+            "animais",
+            "paulo",
+            "anos",
+            "caso",
+            "tratamento"
+        ],
+        "2": [
+            "brasília",
+            "será",
+            "dia",
+            "site",
+            "brasil",
+            "evento",
+            "jogo",
+            "jogos",
+            "endurance",
+            "redes"
+        ],
+        "3": [
+            "anos",
+            "operação",
+            "coluna",
+            "pcdf",
+            "prisão",
+            "reprodução",
+            "mira",
+            "crime",
+            "investigação",
+            "investigações"
+        ],
+        "4": [
+            "presidente",
+            "lula",
+            "trump",
+            "governo",
+            "brasil",
+            "disse",
+            "estados_unidos",
+            "eua",
+            "donald",
+            "afirmou"
+        ],
+        "5": [
+            "anos",
+            "vida",
+            "redes",
+            "pessoas",
+            "sociais",
+            "dia",
+            "vídeo",
+            "gente",
+            "família",
+            "brasil"
+        ],
+        "6": [
+            "israel",
+            "gaza",
+            "hamas",
+            "acordo",
+            "reféns",
+            "guerra",
+            "trump",
+            "cessar-fogo",
+            "paz",
+            "israelense"
+        ],
+        "7": [
+            "distrito_federal",
+            "federal",
+            "será",
+            "dia",
+            "angular",
+            "segurança",
+            "secretaria",
+            "pública",
+            "coluna",
+            "governador"
+        ],
+        "8": [
+            "governo",
+            "ano",
+            "brasil",
+            "bilhões",
+            "país",
+            "imposto",
+            "milhões",
+            "energia",
+            "renda",
+            "aumento"
+        ],
+        "9": [
+            "anos",
+            "homem",
+            "mulher",
+            "reprodução",
+            "carro",
+            "pmdf",
+            "coluna",
+            "teria",
+            "vít1ma",
+            "policiais"
+        ]
+    }
+}

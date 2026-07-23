@@ -1,0 +1,146 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-26 14:02:13",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.12205924524683712,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "acidente",
+            "cbmdf",
+            "veículo",
+            "bombeiros",
+            "condutor",
+            "carro",
+            "pmdf",
+            "fogo",
+            "caminhão",
+            "corpo_de_bombeiros_militar_do_distrito_federal"
+        ],
+        "1": [
+            "senado",
+            "congresso",
+            "câmara",
+            "votação",
+            "deputados",
+            "motta",
+            "câmara_dos_deputados",
+            "texto",
+            "pec",
+            "aprovação"
+        ],
+        "2": [
+            "jogos",
+            "novidades",
+            "música",
+            "partida",
+            "site",
+            "jogo",
+            "endurance",
+            "ingressos",
+            "show",
+            "banda"
+        ],
+        "3": [
+            "pcdf",
+            "mãe",
+            "anos",
+            "tinha",
+            "polícia_civil_do_distrito_federal",
+            "investigações",
+            "casa",
+            "polícia",
+            "mandado",
+            "mandados"
+        ],
+        "4": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "cessar-fogo",
+            "netanyahu",
+            "faixa_de_gaza",
+            "israelense",
+            "palestinos",
+            "israelenses"
+        ],
+        "5": [
+            "stf",
+            "julgamento",
+            "moraes",
+            "ex-presidente",
+            "alexandre",
+            "bolsonaro",
+            "supremo_tribunal_federal",
+            "turma",
+            "ministro",
+            "golpe"
+        ],
+        "6": [
+            "reajuste",
+            "ibaneis",
+            "vagas",
+            "gdf",
+            "angular",
+            "mdb",
+            "servidores",
+            "cldf",
+            "empresas",
+            "rocha"
+        ],
+        "7": [
+            "brasil",
+            "venezuela",
+            "nobel",
+            "encontro",
+            "eua",
+            "trump",
+            "tarifas",
+            "tarifaço",
+            "china",
+            "conversa"
+        ],
+        "8": [
+            "razoáveis",
+            "instrumentalização",
+            "reveses",
+            "cláusula",
+            "funcione",
+            "atrito",
+            "penalizar",
+            "subsidiárias",
+            "juízas",
+            "autoritária"
+        ],
+        "9": [
+            "metanol",
+            "bebidas",
+            "casos",
+            "intoxicação",
+            "saúde",
+            "bebida",
+            "doença",
+            "hungria",
+            "alerta",
+            "chuvas"
+        ]
+    }
+}

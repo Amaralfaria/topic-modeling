@@ -1,0 +1,266 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-26 13:21:43",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.09973946806032728,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "crianças",
+            "wilker",
+            "alunos",
+            "unb",
+            "instituição",
+            "empresa",
+            "judicial",
+            "denúncias",
+            "situação",
+            "youtuber"
+        ],
+        "1": [
+            "família",
+            "amigos",
+            "arquivo",
+            "hospital",
+            "cirurgia",
+            "menina",
+            "contou",
+            "quadro",
+            "médica",
+            "deus"
+        ],
+        "2": [
+            "admitindo",
+            "agrava",
+            "satisfatória",
+            "corremos",
+            "deplorável",
+            "nazismo",
+            "batalhas",
+            "acatar",
+            "assumido",
+            "causaria"
+        ],
+        "3": [
+            "reajuste",
+            "vagas",
+            "rocha",
+            "ibaneis",
+            "gdf",
+            "concurso",
+            "mdb",
+            "diário",
+            "edital",
+            "enem"
+        ],
+        "4": [
+            "operação",
+            "apreensão",
+            "busca",
+            "esquema",
+            "investigações",
+            "dinheiro",
+            "mandados",
+            "pcc",
+            "eram",
+            "tráfico"
+        ],
+        "5": [
+            "energia",
+            "regiões",
+            "água",
+            "ibama",
+            "previsão",
+            "incêndios",
+            "ambiental",
+            "chuvas",
+            "alerta",
+            "máxima"
+        ],
+        "6": [
+            "defesa",
+            "pedido",
+            "decisão",
+            "recurso",
+            "advogados",
+            "stj",
+            "prisão",
+            "determinou",
+            "juiz",
+            "sentença"
+        ],
+        "7": [
+            "jogos",
+            "jogo",
+            "partida",
+            "novidades",
+            "site",
+            "realização",
+            "copa",
+            "shows",
+            "ingressos",
+            "competição"
+        ],
+        "8": [
+            "metanol",
+            "intoxicação",
+            "bebidas",
+            "casos",
+            "bebida",
+            "ministério_da_saúde",
+            "alcoólicas",
+            "mortes",
+            "álcool",
+            "etanol"
+        ],
+        "9": [
+            "cbmdf",
+            "bombeiros",
+            "caminhão",
+            "chamas",
+            "resgate",
+            "avião",
+            "pista",
+            "consciente",
+            "viaturas",
+            "acidente"
+        ],
+        "10": [
+            "roberto",
+            "luís",
+            "barroso",
+            "aposentadoria",
+            "antecipada",
+            "jorge",
+            "confiança",
+            "eleitores",
+            "edson",
+            "quaest"
+        ],
+        "11": [
+            "atriz",
+            "personagem",
+            "filme",
+            "ator",
+            "odete",
+            "museu",
+            "oscar",
+            "cinema",
+            "escritor",
+            "globo"
+        ],
+        "12": [
+            "trump",
+            "encontro",
+            "eua",
+            "estados_unidos",
+            "york",
+            "americano",
+            "conversa",
+            "tarifaço",
+            "tarifas",
+            "donald"
+        ],
+        "13": [
+            "país",
+            "venezuela",
+            "machado",
+            "luta",
+            "comitê",
+            "internacional",
+            "maduro",
+            "edições",
+            "confere",
+            "hoje"
+        ],
+        "14": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "cessar-fogo",
+            "netanyahu",
+            "israelense",
+            "israelenses",
+            "faixa_de_gaza",
+            "palestinos"
+        ],
+        "15": [
+            "anistia",
+            "parlamentares",
+            "motta",
+            "câmara",
+            "deputado",
+            "hugo",
+            "deputados",
+            "projeto",
+            "pec",
+            "senado"
+        ],
+        "16": [
+            "bolsonaro",
+            "julgamento",
+            "golpe",
+            "jair",
+            "golpista",
+            "flávio",
+            "fux",
+            "réus",
+            "dino",
+            "ex-presidente"
+        ],
+        "17": [
+            "mulher",
+            "teria",
+            "anos",
+            "dela",
+            "depoimento",
+            "relacionamento",
+            "relatou",
+            "vítima",
+            "havia",
+            "sido"
+        ],
+        "18": [
+            "pmdf",
+            "câmeras",
+            "pms",
+            "homens",
+            "abordagem",
+            "polícia_militar_do_distrito_federal",
+            "câmera",
+            "fugir",
+            "indivíduo",
+            "sai"
+        ],
+        "19": [
+            "bilhões",
+            "provisória",
+            "renda",
+            "imposto",
+            "fernando",
+            "financeiras",
+            "impostos",
+            "juros",
+            "mercado",
+            "arrecadação"
+        ]
+    }
+}

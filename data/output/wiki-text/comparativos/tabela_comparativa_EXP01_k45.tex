@@ -1,0 +1,76 @@
+% Requer no preâmbulo:
+% \usepackage{booktabs}
+% \usepackage{xltabular}
+% \usepackage{array}
+% \usepackage{ragged2e}
+\begingroup
+\tiny % Fonte pequena recomendada para tabelas com muitas colunas
+\setlength{\tabcolsep}{3pt} % Reduz o espaçamento horizontal entre colunas
+\begin{xltabular}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X@{}}
+    \caption{Comparativo dos tópicos extraídos para a base wiki-text ($K=45$, Top 5 palavras). Para cada algoritmo, foi selecionada a execução com o maior NPMI: BERTOPIC (Exp b, NPMI: 0.1686), CTM (Exp b, NPMI: 0.1453), LDA (Exp c, NPMI: 0.1632), PRODLDA (Exp a, NPMI: 0.1411). O Tópico -1 do BERTopic representa o ruído (outliers).}\label{tab:comparativo_wiki-text_exp01_k45}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endfirsthead
+
+    \caption[]{Comparativo dos tópicos extraídos para a base wiki-text ($K=45$, Top 5 palavras) -- continuação.}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{5}{r}{Continua na próxima página}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    \textbf{-1 (Ruído)} & song, game, album, time, new & - & - & - \\
+    \textbf{0} & episode, series, season, character, episodes & usher, jackson, beats, credits, listing & god, church, christian, religious, religion & album, band, recording, songs, recorded \\
+    \textbf{1} & ship, ships, guns, british, war & oxford, cambridge, cox, heat, silver & british, french, men, war, battle & guns, armament, tons, mounted, armor \\
+    \textbf{2} & song, album, music, video, number & team, drive, defense, nfl, kick & episode, season, series, michael, viewers & area, road, route, miles, city \\
+    \textbf{3} & highway, route, road, north, state & nuclear, editor, professor, paper, page & game, yard, yards, season, football & built, main, end, gun, line \\
+    \textbf{4} & storm, tropical, hurricane, winds, depression & aircraft, air, flight, engine, pilot & aircraft, air, flight, squadron, wing & crew, aircraft, war, mission, ships \\
+    \textbf{5} & season, game, team, runs, innings & century, king, han, norman, known & army, battle, city, war, forces & fight, points, different, set, point \\
+    \textbf{6} & species, shark, genus, found, cap & australia, miller, second, cricket, england & highway, road, route, north, state & review, public, non, law, case \\
+    \textbf{7} & battalion, war, brigade, division, training & british, french, fire, sinking, ships & government, war, political, military, party & highway, intersection, route, terminus, intersections \\
+    \textbf{8} & castle, century, church, station, built & film, role, director, films, box & race, lap, oxford, car, cambridge & century, island, including, popular, area \\
+    \textbf{9} & game, player, games, released, players & lane, road, highway, route, freeway & game, games, player, released, players & song, album, number, like, songs \\
+    \textbf{10} & film, films, role, bond, production & cap, fruit, bodies, color, fungus & hurricane, storm, damage, winds, mph & character, role, television, episode, cast \\
+    \textbf{11} & army, persian, byzantine, battle, emperor & shark, sharks, bird, fish, fin & war, battalion, division, brigade, command & british, battle, men, french, sent \\
+    \textbf{12} & film, india, arab, government, mosque & league, pirates, cubs, major\_league\_baseball, dodgers & band, album, song, rock, guitar & life, work, story, published, wrote \\
+    \textbf{13} & election, governor, campaign, state, government & gaga, madonna, stage, dance, song & company, million, announced, business, sold & water, species, surface, found, form \\
+    \textbf{14} & match, championship, event, wrestling, wwe & empire, army, persian, expedition, greek & album, music, released, songs, track & company, million, construction, line, opened \\
+    \textbf{15} & aircraft, engine, line, air, flight & formula, function, matrix, linear, defined & election, president, state, campaign, party & american, said, years, city, year \\
+    \textbf{16} & olympics, olympic, athletes, games, medal & song, carey, number, video, jackson & horses, horse, breed, food, century & episode, scene, filmed, plot, alien \\
+    \textbf{17} & chinese, han, manga, china, anime & singapore, court, clause, rights, act & castle, century, london, england, built & boat, race, oxford, cambridge, referred \\
+    \textbf{18} & ride, coaster, train, roller, park & book, published, work, wrote, story & character, life, love, relationship, people & south, east, west, july, north \\
+    \textbf{19} & women, police, said, book, murder & daily, bennett, traveling, diamond, travels & episode, series, season, doctor, episodes & species, size, small, larger, description \\
+    \textbf{20} & oxford, race, cambridge, boat, blues & storm, tropical, depression, september, hurricane & species, shark, found, small, large & ship, cruiser, ships, torpedo, tons \\
+    \textbf{21} & government, political, military, president, spanish & batman, released, film, release, dvd & tropical, storm, depression, hurricane, cyclone & game, season, play, led, team \\
+    \textbf{22} & horses, breed, horse, breeds, dog & beam, sisters, battery, shipyard, italian & music, stage, musical, performed, concert & film, role, release, production, movie \\
+    \textbf{23} & painting, art, memorial, museum, memorials & year, time, season, fischer, game & games, world, olympics, team, olympic & people, said, political, government, police \\
+    \textbf{24} & creek, watershed, dam, water, feet & station, railway, tunnel, stock, trains & law, women, court, rights, act & building, roof, tower, buildings, floor \\
+    \textbf{25} & poem, poems, poetry, poet, shakespeare & sunday, text, bach, poem, god & won, round, tournament, match, final & olympics, summer, competed, competition, athletes \\
+    \textbf{26} & bach, text, movement, movements, jesus & bishop, elected, bill, speaker, votes & song, video, music, single, chart & tour, time, new, like, music \\
+    \textbf{27} & lap, race, drivers, laps, pit & stadium, city, school, million, sports & episode, mulder, scully, season, series & team, year, won, following, time \\
+    \textbf{28} & comics, stories, story, comic, magazine & race, car, pole, williams, drivers & book, published, work, wrote, language & song, chart, video, peaked, single \\
+    \textbf{29} & food, chicken, bacon, sandwich, meat & smith, lincoln, washington, new\_york, american & building, church, built, century, site & fruit, fungus, spores, spore, mushroom \\
+    \textbf{30} & scotland, island, king, islands, century & match, kane, championship, title, ring & king, son, death, died, father & game, player, praised, version, games \\
+    \textbf{31} & formula, function, space, matrix, linear & gale, watch, mexico, florida, waves & film, films, role, production, million & century, women, use, known, including \\
+    \textbf{32} & singapore, law, amendment, court, constitution & mulder, scully, fox, carter, files & city, area, park, population, street & episode, aired, enterprise, trek, south\_park \\
+    \textbf{33} & library, fountain, portland, oregon, building & neighbours, character, relationship, mercedes, television & season, game, games, home, runs & family, died, death, wife, married \\
+    \textbf{34} & church, christ, baptism, god, spirit & flying, training, unit, commander, officer & series, story, released, characters, japanese & king, son, emperor, reign, byzantine \\
+    \textbf{35} & plants, god, conscience, design, argument & album, band, sound, songs, beatles & match, championship, team, event, wrestling & war, state, served, government, general \\
+    \textbf{36} & twitter, billion, investment, company, bank & government, war, military, began, following & station, line, trains, train, railway & series, released, season, episodes, best \\
+    \textbf{37} & texas, bay, galveston, city, area & game, player, gaming, mario, players & australia, match, runs, test, innings & coaster, roller, coasters, lift, ride \\
+    \textbf{38} & language, languages, english, words, word & michael, jim, rating, dwight, andy & water, river, area, lake, island & storm, people, mph, damage, hurricane \\
+    \textbf{39} & spacecraft, mission, apollo, nasa, orbit & horses, breed, horse, species, plants & ship, ships, guns, war, tons & dwight, viewed, pam, episode, jim \\
+    \textbf{40} & lighthouse, light, tower, keeper, island & bush, campaign, reagan, president, said & life, family, school, born, father & professor, graduated, graduate, academic, faculty \\
+    \textbf{41} & bike, wheel, steering, lean, rider & belt, deck, guns, trials, russian & team, season, game, points, nba & track, time, held, second, place \\
+    \textbf{42} & congregation, jewish, israel, building, jews & water, river, miles, area, park & police, death, prison, found, trial & runs, run, election, hit, career \\
+    \textbf{43} & liquid, metals, crystal, molecules, phase & stone, bell, window, memorial, chapel & species, cap, plants, fruit, plant & training, command, commander, transferred, assigned \\
+    \textbf{44} & - & coaster, roller, riders, ride, roll & system, formula, space, form, function & winds, hurricane, meteorological, storm, rainfall \\
+\end{xltabular}
+\endgroup

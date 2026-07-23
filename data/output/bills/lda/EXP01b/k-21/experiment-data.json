@@ -1,0 +1,272 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-02 00:13:18",
+        "parameters": {
+            "n_topics": [
+                21
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.5384927390505092,
+        "adjusted_rand_index": 0.3251866602698731,
+        "normalized_mutual_information": 0.4452819478180502,
+        "npmi": 0.11807043072499812,
+        "topic_diversity": 0.7047619047619048
+    },
+    "topics": {
+        "0": [
+            "alien",
+            "united_states",
+            "secretary",
+            "immigration",
+            "dhs",
+            "status",
+            "visa",
+            "aliens",
+            "border",
+            "employment"
+        ],
+        "1": [
+            "information",
+            "federal",
+            "state",
+            "person",
+            "requires",
+            "court",
+            "action",
+            "civil",
+            "employee",
+            "law"
+        ],
+        "2": [
+            "tax",
+            "revenue",
+            "code",
+            "credit",
+            "internal",
+            "income",
+            "qualified",
+            "property",
+            "business",
+            "deduction"
+        ],
+        "3": [
+            "land",
+            "secretary",
+            "federal",
+            "lands",
+            "tribe",
+            "indian",
+            "requires",
+            "interior",
+            "area",
+            "public"
+        ],
+        "4": [
+            "drug",
+            "product",
+            "secretary",
+            "food",
+            "requires",
+            "products",
+            "safety",
+            "drugs",
+            "device",
+            "requirements"
+        ],
+        "5": [
+            "loan",
+            "financial",
+            "mortgage",
+            "consumer",
+            "credit",
+            "loans",
+            "insurance",
+            "requirements",
+            "requires",
+            "interest"
+        ],
+        "6": [
+            "health",
+            "medicare",
+            "title",
+            "plan",
+            "care",
+            "security",
+            "coverage",
+            "social",
+            "insurance",
+            "services"
+        ],
+        "7": [
+            "program",
+            "assistance",
+            "housing",
+            "secretary",
+            "state",
+            "funds",
+            "grants",
+            "eligible",
+            "grant",
+            "appropriations"
+        ],
+        "8": [
+            "education",
+            "school",
+            "students",
+            "program",
+            "programs",
+            "student",
+            "schools",
+            "state",
+            "educational",
+            "secretary"
+        ],
+        "9": [
+            "sec",
+            "secretary",
+            "report",
+            "requires",
+            "appropriations",
+            "title",
+            "authorizes",
+            "committees",
+            "defense",
+            "congress"
+        ],
+        "10": [
+            "criminal",
+            "law",
+            "federal",
+            "enforcement",
+            "state",
+            "general",
+            "sexual",
+            "attorney",
+            "violence",
+            "child"
+        ],
+        "11": [
+            "united_states",
+            "duty",
+            "schedule",
+            "harmonized_tariff",
+            "temporarily",
+            "suspend",
+            "extend",
+            "suspension",
+            "temporary",
+            "articles"
+        ],
+        "12": [
+            "foreign",
+            "president",
+            "united_states",
+            "government",
+            "congress",
+            "iran",
+            "assistance",
+            "country",
+            "international",
+            "directs"
+        ],
+        "13": [
+            "veterans",
+            "secretary",
+            "service",
+            "member",
+            "military",
+            "members",
+            "medical",
+            "veteran",
+            "duty",
+            "benefits"
+        ],
+        "14": [
+            "program",
+            "requires",
+            "research",
+            "small",
+            "establish",
+            "development",
+            "business",
+            "administrator",
+            "federal",
+            "directs"
+        ],
+        "15": [
+            "transportation",
+            "secretary",
+            "safety",
+            "air",
+            "directs",
+            "requires",
+            "service",
+            "airport",
+            "faa",
+            "vessel"
+        ],
+        "16": [
+            "agency",
+            "requires",
+            "federal",
+            "report",
+            "rule",
+            "review",
+            "congress",
+            "information",
+            "agencies",
+            "public"
+        ],
+        "17": [
+            "health",
+            "care",
+            "secretary",
+            "services",
+            "programs",
+            "requires",
+            "child",
+            "grants",
+            "provide",
+            "program"
+        ],
+        "18": [
+            "water",
+            "secretary",
+            "project",
+            "projects",
+            "federal",
+            "state",
+            "species",
+            "management",
+            "requires",
+            "authorizes"
+        ],
+        "19": [
+            "federal",
+            "state",
+            "election",
+            "measure",
+            "amended",
+            "summary",
+            "district",
+            "political",
+            "version",
+            "repeated"
+        ],
+        "20": [
+            "energy",
+            "gas",
+            "oil",
+            "secretary",
+            "fuel",
+            "renewable",
+            "production",
+            "natural",
+            "requires",
+            "program"
+        ]
+    }
+}

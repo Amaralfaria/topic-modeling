@@ -1,0 +1,264 @@
+{
+    "metadata": {
+        "model": "prodLDA",
+        "date": "2026-06-26 15:58:54",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.15250011365138794,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "filho",
+            "família",
+            "criança",
+            "pai",
+            "mãe",
+            "contou",
+            "escola",
+            "menino",
+            "menina",
+            "jovem"
+        ],
+        "1": [
+            "metanol",
+            "intoxicação",
+            "saúde",
+            "casos",
+            "bebidas",
+            "bebida",
+            "sintomas",
+            "suspeita",
+            "internado",
+            "exames"
+        ],
+        "2": [
+            "eua",
+            "trump",
+            "estados_unidos",
+            "donald",
+            "americano",
+            "venezuela",
+            "presidente",
+            "países",
+            "tarifas",
+            "líder"
+        ],
+        "3": [
+            "hoje",
+            "país",
+            "pessoas",
+            "mulheres",
+            "principais",
+            "brasileira",
+            "brasil",
+            "paulo",
+            "youtube",
+            "violência"
+        ],
+        "4": [
+            "jogos",
+            "jogo",
+            "ingressos",
+            "site",
+            "copa",
+            "partida",
+            "palmeiras",
+            "brasileirão",
+            "novidades",
+            "futebol"
+        ],
+        "5": [
+            "evento",
+            "brasília",
+            "será",
+            "dia",
+            "experiência",
+            "espaço",
+            "terá",
+            "iniciativa",
+            "conhecimento",
+            "interessados"
+        ],
+        "6": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "cessar-fogo",
+            "acordo",
+            "palestinos",
+            "israelense",
+            "faixa_de_gaza",
+            "israelenses"
+        ],
+        "7": [
+            "lula",
+            "inácio",
+            "jornalística",
+            "encontra",
+            "feira",
+            "barroso",
+            "luiz",
+            "silva",
+            "roberto",
+            "foto"
+        ],
+        "8": [
+            "cr1me",
+            "vít1ma",
+            "anos",
+            "preso",
+            "mulher",
+            "havia",
+            "vítima",
+            "sido",
+            "casa",
+            "dela"
+        ],
+        "9": [
+            "decisão",
+            "uso",
+            "medidas",
+            "pública",
+            "empresa",
+            "proteção",
+            "territórios",
+            "tjdft",
+            "judicial",
+            "determinou"
+        ],
+        "10": [
+            "operação",
+            "mandados",
+            "apreensão",
+            "esquema",
+            "busca",
+            "investigações",
+            "dinheiro",
+            "investigação",
+            "pcdf",
+            "dr0gas"
+        ],
+        "11": [
+            "câmara",
+            "congresso",
+            "senado",
+            "câmara_dos_deputados",
+            "deputados",
+            "texto",
+            "deputado",
+            "proposta",
+            "projeto",
+            "motta"
+        ],
+        "12": [
+            "julgamento",
+            "bolsonaro",
+            "moraes",
+            "jair",
+            "stf",
+            "ex-presidente",
+            "alexandre",
+            "golpe",
+            "supremo_tribunal_federal",
+            "réus"
+        ],
+        "13": [
+            "atriz",
+            "odete",
+            "filme",
+            "ator",
+            "personagem",
+            "roitman",
+            "oscar",
+            "luto",
+            "fundo",
+            "globo"
+        ],
+        "14": [
+            "mercado",
+            "taxa",
+            "pesquisa",
+            "dados",
+            "bilhões",
+            "economia",
+            "crescimento",
+            "levantamento",
+            "preços",
+            "juros"
+        ],
+        "15": [
+            "oassunto",
+            "preferida",
+            "afazenda",
+            "boyadjian",
+            "saory",
+            "capadodia",
+            "peoa",
+            "peões",
+            "assine",
+            "tàmires"
+        ],
+        "16": [
+            "água",
+            "animal",
+            "região",
+            "animais",
+            "chuvas",
+            "chuva",
+            "clima",
+            "inmet",
+            "árvores",
+            "umidade"
+        ],
+        "17": [
+            "pmdf",
+            "polícia_militar_do_distrito_federal",
+            "homem",
+            "policiais",
+            "imagens",
+            "câmeras",
+            "militares",
+            "policial",
+            "abordagem",
+            "acionada"
+        ],
+        "18": [
+            "cbmdf",
+            "incêndio",
+            "bombeiros",
+            "acidente",
+            "corpo_de_bombeiros_militar_do_distrito_federal",
+            "chamas",
+            "avião",
+            "caminhão",
+            "corpo_de_bombeiros",
+            "fumaça"
+        ],
+        "19": [
+            "angular",
+            "mdb",
+            "ibaneis",
+            "distrito_federal",
+            "reajuste",
+            "governador",
+            "gdf",
+            "oficial",
+            "federal",
+            "rocha"
+        ]
+    }
+}

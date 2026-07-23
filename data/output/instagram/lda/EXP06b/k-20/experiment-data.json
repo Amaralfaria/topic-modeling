@@ -1,0 +1,264 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-26 12:49:59",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.15582543467394935,
+        "topic_diversity": 0.74
+    },
+    "topics": {
+        "0": [
+            "energia",
+            "ano",
+            "dados",
+            "distrito_federal",
+            "brasil",
+            "país",
+            "aumento",
+            "período",
+            "dia",
+            "média"
+        ],
+        "1": [
+            "decisão",
+            "anos",
+            "caso",
+            "justiça",
+            "processo",
+            "prisão",
+            "defesa",
+            "tjdft",
+            "territórios",
+            "mpdft"
+        ],
+        "2": [
+            "trump",
+            "presidente",
+            "lula",
+            "brasil",
+            "estados_unidos",
+            "eua",
+            "donald",
+            "disse",
+            "governo",
+            "encontro"
+        ],
+        "3": [
+            "presidente",
+            "trump",
+            "eua",
+            "governo",
+            "estados_unidos",
+            "país",
+            "venezuela",
+            "guerra",
+            "rússia",
+            "donald"
+        ],
+        "4": [
+            "saúde",
+            "metanol",
+            "casos",
+            "intoxicação",
+            "bebidas",
+            "paulo",
+            "caso",
+            "anos",
+            "bebida",
+            "tratamento"
+        ],
+        "5": [
+            "bolsonaro",
+            "ex-presidente",
+            "stf",
+            "jair",
+            "moraes",
+            "eduardo",
+            "prisão",
+            "supremo_tribunal_federal",
+            "ministro",
+            "alexandre"
+        ],
+        "6": [
+            "homem",
+            "anos",
+            "mulher",
+            "coluna",
+            "mira",
+            "policiais",
+            "reprodução",
+            "pmdf",
+            "teria",
+            "vít1ma"
+        ],
+        "7": [
+            "brasil",
+            "mostra",
+            "mundo",
+            "anos",
+            "fundo",
+            "reportagem",
+            "imagem",
+            "texto",
+            "vídeo",
+            "milhões"
+        ],
+        "8": [
+            "stf",
+            "ministro",
+            "bolsonaro",
+            "julgamento",
+            "moraes",
+            "supremo_tribunal_federal",
+            "golpe",
+            "jair",
+            "ex-presidente",
+            "alexandre"
+        ],
+        "9": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "acordo",
+            "cessar-fogo",
+            "guerra",
+            "paz",
+            "israelense",
+            "trump"
+        ],
+        "10": [
+            "nobel",
+            "prêmio",
+            "paz",
+            "papa",
+            "machado",
+            "corina",
+            "líder",
+            "venezuela",
+            "maría",
+            "anos"
+        ],
+        "11": [
+            "governo",
+            "projeto",
+            "câmara",
+            "congresso",
+            "senado",
+            "presidente",
+            "proposta",
+            "anistia",
+            "texto",
+            "deputado"
+        ],
+        "12": [
+            "brasil",
+            "pessoas",
+            "gente",
+            "mulheres",
+            "entrevista",
+            "país",
+            "hoje",
+            "política",
+            "notícias",
+            "paulo"
+        ],
+        "13": [
+            "brasília",
+            "brasil",
+            "jogos",
+            "jogo",
+            "dia",
+            "site",
+            "anos",
+            "show",
+            "será",
+            "redes"
+        ],
+        "14": [
+            "lula",
+            "presidente",
+            "encontra",
+            "jornalística",
+            "feira",
+            "foto",
+            "governo",
+            "luiz",
+            "silva",
+            "inácio"
+        ],
+        "15": [
+            "operação",
+            "pcdf",
+            "coluna",
+            "dinheiro",
+            "investigações",
+            "esquema",
+            "busca",
+            "apreensão",
+            "investigação",
+            "mandados"
+        ],
+        "16": [
+            "distrito_federal",
+            "será",
+            "federal",
+            "segurança",
+            "secretaria",
+            "governador",
+            "angular",
+            "coluna",
+            "ibaneis",
+            "acordo"
+        ],
+        "17": [
+            "cbmdf",
+            "carro",
+            "acidente",
+            "veículo",
+            "motorista",
+            "anos",
+            "reprodução",
+            "incêndio",
+            "pessoas",
+            "volta"
+        ],
+        "18": [
+            "anos",
+            "família",
+            "mãe",
+            "redes",
+            "sociais",
+            "casa",
+            "disse",
+            "filho",
+            "pai",
+            "tinha"
+        ],
+        "19": [
+            "vagas",
+            "dia",
+            "será",
+            "endurance",
+            "prova",
+            "provas",
+            "concurso",
+            "estudantes",
+            "evento",
+            "ensino"
+        ]
+    }
+}

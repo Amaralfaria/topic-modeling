@@ -1,0 +1,272 @@
+{
+    "metadata": {
+        "model": "prodLDA",
+        "date": "2026-06-25 03:55:47",
+        "parameters": {
+            "n_topics": [
+                21
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.43305882662479295,
+        "adjusted_rand_index": 0.23890749044263124,
+        "normalized_mutual_information": 0.30203544335492927,
+        "npmi": 0.15724199567102784,
+        "topic_diversity": 0.9428571428571428
+    },
+    "topics": {
+        "0": [
+            "agency",
+            "financial",
+            "executive",
+            "government",
+            "rule",
+            "reports",
+            "rules",
+            "information",
+            "intelligence",
+            "regulatory"
+        ],
+        "1": [
+            "consumer",
+            "drug",
+            "product",
+            "drugs",
+            "fda",
+            "cosmetic",
+            "food_and_drug_administration",
+            "labeling",
+            "prescription",
+            "products"
+        ],
+        "2": [
+            "education",
+            "student",
+            "educational",
+            "school",
+            "students",
+            "schools",
+            "secondary",
+            "elementary",
+            "higher",
+            "high"
+        ],
+        "3": [
+            "care",
+            "health",
+            "medicare",
+            "coverage",
+            "services",
+            "physician",
+            "health_and_human_services",
+            "hhs",
+            "hospital",
+            "medicaid"
+        ],
+        "4": [
+            "employer",
+            "employment",
+            "compensation",
+            "employee",
+            "period",
+            "labor",
+            "unemployment",
+            "benefits",
+            "employers",
+            "employees"
+        ],
+        "5": [
+            "country",
+            "countries",
+            "united_states",
+            "international",
+            "nationals",
+            "nationality",
+            "president",
+            "sense",
+            "immigration",
+            "refugee"
+        ],
+        "6": [
+            "business",
+            "small",
+            "loan",
+            "loans",
+            "mortgage",
+            "sba",
+            "small_business_administration",
+            "businesses",
+            "hud",
+            "owned"
+        ],
+        "7": [
+            "designee",
+            "express",
+            "ballots",
+            "voters",
+            "polling",
+            "fighting",
+            "voting",
+            "influence",
+            "places",
+            "calls"
+        ],
+        "8": [
+            "fuel",
+            "gas",
+            "renewable",
+            "production",
+            "clean",
+            "energy",
+            "oil",
+            "natural",
+            "electric",
+            "emissions"
+        ],
+        "9": [
+            "indicates",
+            "cpi",
+            "xvi",
+            "index",
+            "titles",
+            "bureau_of_labor_statistics",
+            "survivors",
+            "ensures",
+            "disability_insurance",
+            "typical"
+        ],
+        "10": [
+            "armed_forces",
+            "veterans_affairs",
+            "department_of_veterans_affairs",
+            "veteran",
+            "member",
+            "department_of_defense",
+            "active",
+            "concerned",
+            "members",
+            "veterans"
+        ],
+        "11": [
+            "internal",
+            "revenue",
+            "code",
+            "deduction",
+            "taxpayers",
+            "allow",
+            "tax",
+            "gross",
+            "taxpayer",
+            "taxable"
+        ],
+        "12": [
+            "requires",
+            "secretary",
+            "directs",
+            "sec",
+            "report",
+            "requirements",
+            "establish",
+            "program",
+            "provide",
+            "security"
+        ],
+        "13": [
+            "act",
+            "state",
+            "program",
+            "amends",
+            "provide",
+            "requires",
+            "sec",
+            "use",
+            "secretary",
+            "specified"
+        ],
+        "14": [
+            "enforcement",
+            "criminal",
+            "law",
+            "attorney",
+            "penalties",
+            "civil",
+            "violation",
+            "violations",
+            "crime",
+            "investigation"
+        ],
+        "15": [
+            "harmonized_tariff",
+            "temporarily",
+            "suspension",
+            "suspend",
+            "schedule",
+            "acid",
+            "footwear",
+            "fibers",
+            "staple",
+            "acrylic"
+        ],
+        "16": [
+            "version",
+            "repeated",
+            "introduced",
+            "federal_aviation_administration",
+            "summary",
+            "measure",
+            "united_states_postal_service",
+            "discretionary",
+            "passed",
+            "amended"
+        ],
+        "17": [
+            "research",
+            "coordinate",
+            "develop",
+            "address",
+            "promote",
+            "director",
+            "science",
+            "regional",
+            "improve",
+            "identify"
+        ],
+        "18": [
+            "convey",
+            "conveyance",
+            "conveyed",
+            "wilderness",
+            "blm",
+            "acres",
+            "approximately",
+            "bureau_of_land_management",
+            "parcels",
+            "national_wilderness_preservation_system"
+        ],
+        "19": [
+            "act",
+            "program",
+            "secretary",
+            "requires",
+            "programs",
+            "amends",
+            "assistance",
+            "sec",
+            "grants",
+            "indian"
+        ],
+        "20": [
+            "federal",
+            "act",
+            "water",
+            "project",
+            "public",
+            "species",
+            "agreement",
+            "construction",
+            "plan",
+            "management"
+        ]
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-26 15:34:08",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.12245758544240253,
+        "topic_diversity": 0.9222222222222223
+    },
+    "topics": {
+        "-1": [
+            "anos",
+            "homem",
+            "coluna",
+            "reprodução",
+            "presidente",
+            "durante",
+            "disse",
+            "pessoas",
+            "caso",
+            "brasil"
+        ],
+        "0": [
+            "bolsonaro",
+            "presidente",
+            "anos",
+            "stf",
+            "ministro",
+            "lula",
+            "governo",
+            "disse",
+            "brasil",
+            "trump"
+        ],
+        "1": [
+            "endurance",
+            "brasília",
+            "site",
+            "dia",
+            "será",
+            "brasil",
+            "jogo",
+            "anos",
+            "redes",
+            "novidades"
+        ],
+        "2": [
+            "israel",
+            "hamas",
+            "gaza",
+            "reféns",
+            "trump",
+            "cessar-fogo",
+            "guerra",
+            "acordo",
+            "israelense",
+            "palestinos"
+        ],
+        "3": [
+            "incêndio",
+            "chuvas",
+            "inmet",
+            "umidade",
+            "fogo",
+            "pessoas",
+            "chamas",
+            "gripe",
+            "avião",
+            "região"
+        ],
+        "4": [
+            "autismo",
+            "autista",
+            "espectro",
+            "filho",
+            "anos",
+            "série",
+            "criança",
+            "menino",
+            "mãe",
+            "diagnóstico"
+        ],
+        "5": [
+            "nobel",
+            "prêmio",
+            "física",
+            "descoberta",
+            "cientistas",
+            "medicina",
+            "descobertas",
+            "milhões",
+            "john",
+            "quântica"
+        ],
+        "6": [
+            "câncer",
+            "mama",
+            "hospital_sírio-libanês",
+            "diagnóstico",
+            "mulheres",
+            "tratamento",
+            "tumor",
+            "pele",
+            "desenvolvida",
+            "exames"
+        ],
+        "7": [
+            "china",
+            "tarifas",
+            "chinês",
+            "trump",
+            "produtos",
+            "presidente",
+            "eua",
+            "estados_unidos",
+            "impor",
+            "tarifa"
+        ],
+        "8": [
+            "liderança",
+            "ceo",
+            "conhecimento",
+            "vaga",
+            "experiência",
+            "17h30",
+            "desejável",
+            "planilhas",
+            "habilidade",
+            "computadores"
+        ]
+    }
+}

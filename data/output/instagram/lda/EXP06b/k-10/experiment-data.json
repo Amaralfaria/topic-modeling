@@ -1,0 +1,144 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-26 12:48:42",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.11308511245117732,
+        "topic_diversity": 0.8
+    },
+    "topics": {
+        "0": [
+            "distrito_federal",
+            "federal",
+            "ano",
+            "será",
+            "secretaria",
+            "milhões",
+            "angular",
+            "dia",
+            "coluna",
+            "lei"
+        ],
+        "1": [
+            "dia",
+            "brasília",
+            "brasil",
+            "será",
+            "anos",
+            "evento",
+            "redes",
+            "site",
+            "sociais",
+            "paulo"
+        ],
+        "2": [
+            "israel",
+            "gaza",
+            "hamas",
+            "trump",
+            "acordo",
+            "guerra",
+            "reféns",
+            "presidente",
+            "cessar-fogo",
+            "estados_unidos"
+        ],
+        "3": [
+            "bolsonaro",
+            "stf",
+            "ministro",
+            "ex-presidente",
+            "julgamento",
+            "jair",
+            "moraes",
+            "supremo_tribunal_federal",
+            "alexandre",
+            "prisão"
+        ],
+        "4": [
+            "presidente",
+            "lula",
+            "trump",
+            "brasil",
+            "governo",
+            "estados_unidos",
+            "disse",
+            "eua",
+            "donald",
+            "política"
+        ],
+        "5": [
+            "metanol",
+            "governo",
+            "projeto",
+            "câmara",
+            "intoxicação",
+            "senado",
+            "congresso",
+            "anistia",
+            "proposta",
+            "atualizações"
+        ],
+        "6": [
+            "região",
+            "energia",
+            "incêndio",
+            "pessoas",
+            "acordo",
+            "cerca",
+            "segurança",
+            "distrito_federal",
+            "fogo",
+            "durante"
+        ],
+        "7": [
+            "anos",
+            "saúde",
+            "pessoas",
+            "vida",
+            "crianças",
+            "brasil",
+            "gente",
+            "redes",
+            "reportagem",
+            "sociais"
+        ],
+        "8": [
+            "operação",
+            "pcdf",
+            "coluna",
+            "policiais",
+            "mira",
+            "prisão",
+            "reprodução",
+            "dinheiro",
+            "investigações",
+            "anos"
+        ],
+        "9": [
+            "anos",
+            "homem",
+            "mulher",
+            "reprodução",
+            "coluna",
+            "carro",
+            "teria",
+            "caso",
+            "vítima",
+            "pmdf"
+        ]
+    }
+}

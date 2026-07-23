@@ -1,0 +1,146 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-26 13:11:42",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.14858474798645321,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "cessar-fogo",
+            "israelense",
+            "faixa_de_gaza",
+            "netanyahu",
+            "palestinos",
+            "israelenses"
+        ],
+        "1": [
+            "direito_internacional_público",
+            "razoáveis",
+            "soberana",
+            "deliberações",
+            "decididos",
+            "ex-senadora",
+            "ironizaram",
+            "substancial",
+            "autoritária",
+            "avaliava"
+        ],
+        "2": [
+            "nobel",
+            "brasil",
+            "venezuela",
+            "tarifas",
+            "encontro",
+            "eua",
+            "conversa",
+            "maduro",
+            "trump",
+            "tarifaço"
+        ],
+        "3": [
+            "metanol",
+            "saúde",
+            "intoxicação",
+            "casos",
+            "bebidas",
+            "bebida",
+            "doença",
+            "consumo",
+            "ministério_da_saúde",
+            "alcoólicas"
+        ],
+        "4": [
+            "congresso",
+            "senado",
+            "câmara",
+            "texto",
+            "votação",
+            "deputados",
+            "imposto",
+            "motta",
+            "câmara_dos_deputados",
+            "aprovação"
+        ],
+        "5": [
+            "stf",
+            "julgamento",
+            "moraes",
+            "bolsonaro",
+            "ex-presidente",
+            "alexandre",
+            "supremo_tribunal_federal",
+            "ministro",
+            "golpe",
+            "jair"
+        ],
+        "6": [
+            "cbmdf",
+            "bombeiros",
+            "corpo_de_bombeiros_militar_do_distrito_federal",
+            "chamas",
+            "caminhão",
+            "fogo",
+            "corpo_de_bombeiros",
+            "altura",
+            "acionado",
+            "pista"
+        ],
+        "7": [
+            "mãe",
+            "anos",
+            "casa",
+            "tinha",
+            "família",
+            "filho",
+            "teria",
+            "filha",
+            "jovem",
+            "pai"
+        ],
+        "8": [
+            "site",
+            "jogos",
+            "abertas",
+            "novidades",
+            "brasília",
+            "jogo",
+            "endurance",
+            "partida",
+            "prova",
+            "inscrições"
+        ],
+        "9": [
+            "operação",
+            "esquema",
+            "dinheiro",
+            "reajuste",
+            "empresas",
+            "empresa",
+            "mandados",
+            "angular",
+            "servidores",
+            "apreensão"
+        ]
+    }
+}

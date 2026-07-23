@@ -1,0 +1,145 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-26 15:38:15",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.07161966806691025,
+        "topic_diversity": 0.9777777777777777
+    },
+    "topics": {
+        "-1": [
+            "anos",
+            "bolsonaro",
+            "presidente",
+            "stf",
+            "coluna",
+            "disse",
+            "reprodução",
+            "homem",
+            "durante",
+            "brasil"
+        ],
+        "0": [
+            "anos",
+            "presidente",
+            "brasil",
+            "lula",
+            "governo",
+            "disse",
+            "bolsonaro",
+            "dia",
+            "durante",
+            "ministro"
+        ],
+        "1": [
+            "israel",
+            "hamas",
+            "gaza",
+            "reféns",
+            "trump",
+            "cessar-fogo",
+            "guerra",
+            "acordo",
+            "israelense",
+            "palestinos"
+        ],
+        "2": [
+            "animais",
+            "animal",
+            "cães",
+            "gatos",
+            "zoológico",
+            "aviária",
+            "cachorro",
+            "gripe",
+            "cadela",
+            "aves"
+        ],
+        "3": [
+            "avião",
+            "aeronave",
+            "voo",
+            "restaurante",
+            "pessoas",
+            "barco",
+            "terremoto",
+            "jamile",
+            "passageiros",
+            "magnitude"
+        ],
+        "4": [
+            "câncer",
+            "saúde",
+            "mama",
+            "vacina",
+            "diagnóstico",
+            "vacinação",
+            "doença",
+            "dengue",
+            "anos",
+            "doses"
+        ],
+        "5": [
+            "china",
+            "tarifas",
+            "trump",
+            "apostas",
+            "chinês",
+            "economia",
+            "dólar",
+            "alta",
+            "inflação",
+            "estados_unidos"
+        ],
+        "6": [
+            "experiência",
+            "vagas",
+            "vaga",
+            "liderança",
+            "oportunidades",
+            "agências",
+            "trabalhador",
+            "conhecimento",
+            "ensino",
+            "ceo"
+        ],
+        "7": [
+            "nobel",
+            "prêmio",
+            "física",
+            "medicina",
+            "john",
+            "descobertas",
+            "milhões",
+            "quântica",
+            "imunológico",
+            "quânticos"
+        ],
+        "8": [
+            "afazenda",
+            "exclusivos",
+            "assistir",
+            "transmissão",
+            "sinais",
+            "horas",
+            "roça",
+            "dudu",
+            "saory",
+            "peoa"
+        ]
+    }
+}

@@ -1,0 +1,272 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-02 00:08:57",
+        "parameters": {
+            "n_topics": [
+                21
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.5053252709663462,
+        "adjusted_rand_index": 0.30809649638775916,
+        "normalized_mutual_information": 0.4246816840679873,
+        "npmi": 0.10955750552305034,
+        "topic_diversity": 0.7047619047619048
+    },
+    "topics": {
+        "0": [
+            "alien",
+            "secretary",
+            "united_states",
+            "immigration",
+            "dhs",
+            "air",
+            "status",
+            "airport",
+            "faa",
+            "visa"
+        ],
+        "1": [
+            "water",
+            "project",
+            "projects",
+            "secretary",
+            "federal",
+            "construction",
+            "authorizes",
+            "state",
+            "funds",
+            "sec"
+        ],
+        "2": [
+            "land",
+            "secretary",
+            "federal",
+            "lands",
+            "requires",
+            "public",
+            "property",
+            "area",
+            "interior",
+            "wilderness"
+        ],
+        "3": [
+            "sec",
+            "secretary",
+            "requires",
+            "report",
+            "authorizes",
+            "appropriations",
+            "defense",
+            "committees",
+            "directs",
+            "dod"
+        ],
+        "4": [
+            "program",
+            "small",
+            "business",
+            "assistance",
+            "housing",
+            "sec",
+            "secretary",
+            "grants",
+            "loan",
+            "administrator"
+        ],
+        "5": [
+            "information",
+            "service",
+            "requires",
+            "federal",
+            "electronic",
+            "state",
+            "security",
+            "public",
+            "entity",
+            "election"
+        ],
+        "6": [
+            "federal",
+            "state",
+            "court",
+            "law",
+            "criminal",
+            "civil",
+            "action",
+            "person",
+            "employee",
+            "prohibits"
+        ],
+        "7": [
+            "requires",
+            "secretary",
+            "program",
+            "research",
+            "establish",
+            "directs",
+            "develop",
+            "development",
+            "federal",
+            "programs"
+        ],
+        "8": [
+            "indian",
+            "tribe",
+            "secretary",
+            "tribal",
+            "tribes",
+            "federal",
+            "species",
+            "native",
+            "trust",
+            "state"
+        ],
+        "9": [
+            "education",
+            "school",
+            "students",
+            "program",
+            "programs",
+            "student",
+            "schools",
+            "state",
+            "educational",
+            "secretary"
+        ],
+        "10": [
+            "health",
+            "care",
+            "medicare",
+            "services",
+            "secretary",
+            "coverage",
+            "medical",
+            "title",
+            "plan",
+            "program"
+        ],
+        "11": [
+            "veterans",
+            "secretary",
+            "service",
+            "member",
+            "benefits",
+            "members",
+            "military",
+            "compensation",
+            "disability",
+            "individual"
+        ],
+        "12": [
+            "united_states",
+            "duty",
+            "schedule",
+            "harmonized_tariff",
+            "temporarily",
+            "suspend",
+            "extend",
+            "suspension",
+            "temporary",
+            "articles"
+        ],
+        "13": [
+            "child",
+            "state",
+            "grants",
+            "care",
+            "services",
+            "health",
+            "programs",
+            "program",
+            "provide",
+            "grant"
+        ],
+        "14": [
+            "oil",
+            "secretary",
+            "gas",
+            "lease",
+            "state",
+            "natural",
+            "federal",
+            "production",
+            "leasing",
+            "requires"
+        ],
+        "15": [
+            "tax",
+            "revenue",
+            "code",
+            "internal",
+            "income",
+            "credit",
+            "qualified",
+            "property",
+            "deduction",
+            "gross"
+        ],
+        "16": [
+            "loan",
+            "financial",
+            "mortgage",
+            "consumer",
+            "credit",
+            "loans",
+            "insurance",
+            "requires",
+            "requirements",
+            "interest"
+        ],
+        "17": [
+            "agency",
+            "federal",
+            "requires",
+            "rule",
+            "sec",
+            "report",
+            "congress",
+            "bill",
+            "year",
+            "review"
+        ],
+        "18": [
+            "drug",
+            "product",
+            "secretary",
+            "food",
+            "requires",
+            "products",
+            "safety",
+            "drugs",
+            "requirements",
+            "fda"
+        ],
+        "19": [
+            "energy",
+            "fuel",
+            "renewable",
+            "transportation",
+            "secretary",
+            "vehicle",
+            "gas",
+            "program",
+            "electric",
+            "requires"
+        ],
+        "20": [
+            "president",
+            "foreign",
+            "united_states",
+            "government",
+            "congress",
+            "iran",
+            "assistance",
+            "country",
+            "international",
+            "directs"
+        ]
+    }
+}

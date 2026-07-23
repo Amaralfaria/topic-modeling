@@ -1,0 +1,274 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-25 03:12:36",
+        "parameters": {
+            "n_topics": [
+                21
+            ],
+            "embedding_model": "all-MiniLM-L6-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.48556344912370625,
+        "adjusted_rand_index": 0.28799620572001366,
+        "normalized_mutual_information": 0.3782004857866351,
+        "npmi": 0.06481173645301738,
+        "topic_diversity": 0.9476190476190476
+    },
+    "topics": {
+        "0": [
+            "device",
+            "devices",
+            "safety",
+            "information",
+            "operator",
+            "regulations",
+            "inspections",
+            "inspection",
+            "fda",
+            "electronic"
+        ],
+        "1": [
+            "fy2014-fy2018",
+            "unobligated",
+            "territories",
+            "viii",
+            "delegate",
+            "earmarks",
+            "reward",
+            "deficiencies",
+            "rescinds",
+            "crossing"
+        ],
+        "2": [
+            "water",
+            "environmental",
+            "federal",
+            "wildlife",
+            "management",
+            "species",
+            "fish",
+            "act",
+            "lease",
+            "project"
+        ],
+        "3": [
+            "state",
+            "assistance",
+            "services",
+            "income",
+            "eligible",
+            "title",
+            "program",
+            "amends",
+            "provide",
+            "payments"
+        ],
+        "4": [
+            "academic",
+            "college",
+            "student",
+            "schools",
+            "secondary",
+            "teachers",
+            "grade",
+            "educational",
+            "success",
+            "postsecondary"
+        ],
+        "5": [
+            "wilderness",
+            "convey",
+            "county",
+            "park",
+            "conveyance",
+            "exchange",
+            "reservation",
+            "city",
+            "trail",
+            "utah"
+        ],
+        "6": [
+            "building",
+            "version",
+            "repeated",
+            "ohio",
+            "broadband",
+            "measure",
+            "incumbent",
+            "introduced",
+            "summary",
+            "medium"
+        ],
+        "7": [
+            "suspension",
+            "suspend",
+            "temporarily",
+            "schedule",
+            "harmonized_tariff",
+            "staple",
+            "acid",
+            "lamps",
+            "temporary",
+            "fy2014-fy2018"
+        ],
+        "8": [
+            "fine",
+            "offense",
+            "firearms",
+            "district",
+            "violation",
+            "election",
+            "civil",
+            "firearm",
+            "court",
+            "official"
+        ],
+        "9": [
+            "cdc",
+            "hiv",
+            "acting",
+            "communities",
+            "center",
+            "prevention",
+            "collaborative",
+            "address",
+            "strategy",
+            "approaches"
+        ],
+        "10": [
+            "state",
+            "general",
+            "information",
+            "title",
+            "law",
+            "enforcement",
+            "federal",
+            "security",
+            "criminal",
+            "child"
+        ],
+        "11": [
+            "corporation",
+            "tax",
+            "taxes",
+            "taxpayer",
+            "stock",
+            "income",
+            "gross",
+            "corporations",
+            "taxpayers",
+            "taxable"
+        ],
+        "12": [
+            "workers",
+            "old",
+            "employer",
+            "worker",
+            "age",
+            "employers",
+            "social_security",
+            "labor",
+            "employment",
+            "survivors"
+        ],
+        "13": [
+            "volunteers",
+            "fy2014-fy2018",
+            "cents",
+            "allowable",
+            "fsa",
+            "household",
+            "viii",
+            "earmarks",
+            "telework",
+            "expense"
+        ],
+        "14": [
+            "emissions",
+            "power",
+            "carbon",
+            "epa",
+            "industrial",
+            "electricity",
+            "renewable",
+            "clean",
+            "production",
+            "emission"
+        ],
+        "15": [
+            "medicare",
+            "hospital",
+            "medicaid",
+            "physician",
+            "xviii",
+            "therapy",
+            "patient",
+            "social",
+            "hospitals",
+            "prescription"
+        ],
+        "16": [
+            "international",
+            "countries",
+            "terrorism",
+            "counter",
+            "president",
+            "country",
+            "israel",
+            "articles",
+            "export",
+            "trade"
+        ],
+        "17": [
+            "board",
+            "company",
+            "bank",
+            "banks",
+            "lending",
+            "holding",
+            "depository",
+            "debt",
+            "fdic",
+            "creditors"
+        ],
+        "18": [
+            "armed_forces",
+            "active",
+            "contingency",
+            "retired",
+            "reserve",
+            "concerned",
+            "combat",
+            "veteran",
+            "war",
+            "civilian"
+        ],
+        "19": [
+            "substances",
+            "livestock",
+            "migratory",
+            "endangered",
+            "counter",
+            "disaster",
+            "growing",
+            "marketing",
+            "contains",
+            "producer"
+        ],
+        "20": [
+            "sec",
+            "requires",
+            "congress",
+            "report",
+            "committees",
+            "small",
+            "activities",
+            "establish",
+            "program",
+            "plan"
+        ]
+    }
+}

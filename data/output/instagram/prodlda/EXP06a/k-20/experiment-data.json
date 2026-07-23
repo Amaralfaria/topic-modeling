@@ -1,0 +1,264 @@
+{
+    "metadata": {
+        "model": "prodLDA",
+        "date": "2026-06-26 15:45:15",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.14573805495031597,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "pessoas",
+            "país",
+            "crianças",
+            "hoje",
+            "mulheres",
+            "principais",
+            "brasileira",
+            "youtube",
+            "população",
+            "políticas"
+        ],
+        "1": [
+            "dr0gas",
+            "pcdf",
+            "flagrante",
+            "polícia_civil_do_distrito_federal",
+            "delegacia_de_polícia",
+            "suspeito",
+            "tráf1co",
+            "prendeu",
+            "policiais",
+            "mira"
+        ],
+        "2": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "cessar-fogo",
+            "acordo",
+            "israelense",
+            "palestinos",
+            "faixa_de_gaza",
+            "guerra"
+        ],
+        "3": [
+            "afazenda",
+            "oassunto",
+            "preferida",
+            "boyadjian",
+            "saory",
+            "gnewsnacop30",
+            "capadodia",
+            "omundonaamazônia",
+            "roça",
+            "peoa"
+        ],
+        "4": [
+            "fundo",
+            "azul",
+            "artificial",
+            "inteligência",
+            "terno",
+            "escuro",
+            "paris",
+            "imagem",
+            "cabelos",
+            "branca"
+        ],
+        "5": [
+            "metanol",
+            "intoxicação",
+            "casos",
+            "bebidas",
+            "saúde",
+            "bebida",
+            "sintomas",
+            "alcoólicas",
+            "suspeita",
+            "internado"
+        ],
+        "6": [
+            "angular",
+            "mdb",
+            "ibaneis",
+            "gdf",
+            "distrital",
+            "servidores",
+            "cldf",
+            "federal",
+            "distrito",
+            "governador"
+        ],
+        "7": [
+            "morreu",
+            "filme",
+            "música",
+            "luto",
+            "cinema",
+            "carreira",
+            "trajetória",
+            "vida",
+            "oscar",
+            "história"
+        ],
+        "8": [
+            "vagas",
+            "inscrições",
+            "prova",
+            "candidatos",
+            "concurso",
+            "provas",
+            "cnu",
+            "edição",
+            "serão",
+            "ensino"
+        ],
+        "9": [
+            "bolsonaro",
+            "ex-presidente",
+            "moraes",
+            "jair",
+            "defesa",
+            "alexandre",
+            "prisão",
+            "pgr",
+            "condenação",
+            "julgamento"
+        ],
+        "10": [
+            "animais",
+            "animal",
+            "incêndio",
+            "moradores",
+            "região",
+            "água",
+            "cães",
+            "energia",
+            "chamas",
+            "fogo"
+        ],
+        "11": [
+            "trump",
+            "eua",
+            "estados_unidos",
+            "donald",
+            "presidente",
+            "americano",
+            "encontro",
+            "venezuela",
+            "países",
+            "tarifas"
+        ],
+        "12": [
+            "veículo",
+            "carro",
+            "acidente",
+            "cbmdf",
+            "condutor",
+            "motorista",
+            "moto",
+            "caminhão",
+            "corpo_de_bombeiros_militar_do_distrito_federal",
+            "ac1dente"
+        ],
+        "13": [
+            "futebol",
+            "odete",
+            "novela",
+            "roitman",
+            "time",
+            "viralizou",
+            "flamengo",
+            "jogo",
+            "vale",
+            "ancelotti"
+        ],
+        "14": [
+            "câmara",
+            "congresso",
+            "senado",
+            "projeto",
+            "proposta",
+            "câmara_dos_deputados",
+            "deputado",
+            "anistia",
+            "texto",
+            "parlamentares"
+        ],
+        "15": [
+            "mãe",
+            "anos",
+            "teria",
+            "dela",
+            "jovem",
+            "mulher",
+            "filha",
+            "criança",
+            "havia",
+            "tinha"
+        ],
+        "16": [
+            "milhões",
+            "empresas",
+            "dados",
+            "mercado",
+            "dinheiro",
+            "esquema",
+            "empresa",
+            "contas",
+            "valores",
+            "total"
+        ],
+        "17": [
+            "brasília",
+            "dia",
+            "site",
+            "será",
+            "novidades",
+            "capital",
+            "inmet",
+            "evento",
+            "aproveite",
+            "semana"
+        ],
+        "18": [
+            "jornalística",
+            "encontra",
+            "feira",
+            "inácio",
+            "foto",
+            "lima",
+            "silva",
+            "luiz",
+            "sérgio",
+            "fernando"
+        ],
+        "19": [
+            "barroso",
+            "stf",
+            "ministros",
+            "ministro",
+            "corte",
+            "roberto",
+            "luís",
+            "atualizações",
+            "fux",
+            "supremo"
+        ]
+    }
+}

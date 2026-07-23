@@ -1,0 +1,274 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-25 03:31:54",
+        "parameters": {
+            "n_topics": [
+                21
+            ],
+            "embedding_model": "all-MiniLM-L6-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.4848309256056038,
+        "adjusted_rand_index": 0.265161681587028,
+        "normalized_mutual_information": 0.37185335101511013,
+        "npmi": 0.03735163515289305,
+        "topic_diversity": 0.8809523809523809
+    },
+    "topics": {
+        "0": [
+            "wilderness",
+            "county",
+            "reservation",
+            "acres",
+            "convey",
+            "exchange",
+            "conveyance",
+            "park",
+            "trust",
+            "boundaries"
+        ],
+        "1": [
+            "international",
+            "countries",
+            "respecting",
+            "country",
+            "terrorism",
+            "homeland_security",
+            "foreign",
+            "israel",
+            "president",
+            "cbp"
+        ],
+        "2": [
+            "academic",
+            "schools",
+            "secondary",
+            "college",
+            "lea",
+            "teachers",
+            "educational",
+            "student",
+            "teacher",
+            "leas"
+        ],
+        "3": [
+            "ohio",
+            "repeated",
+            "version",
+            "judges",
+            "hawaii",
+            "building",
+            "measure",
+            "redesignates",
+            "introduced",
+            "designating"
+        ],
+        "4": [
+            "employee",
+            "employer",
+            "labor",
+            "workers",
+            "employees",
+            "wages",
+            "age",
+            "unemployment",
+            "benefit",
+            "retirement"
+        ],
+        "5": [
+            "labeling",
+            "fda",
+            "devices",
+            "device",
+            "product",
+            "substances",
+            "signal",
+            "flight",
+            "generic",
+            "aircraft"
+        ],
+        "6": [
+            "court",
+            "information",
+            "action",
+            "general",
+            "agency",
+            "electronic",
+            "internet",
+            "accessed",
+            "enforcement",
+            "consent"
+        ],
+        "7": [
+            "federal",
+            "water",
+            "environmental",
+            "management",
+            "species",
+            "including",
+            "activities",
+            "state",
+            "lease",
+            "wildlife"
+        ],
+        "8": [
+            "corporation",
+            "internal",
+            "exclusion",
+            "revenue",
+            "taxes",
+            "inflation",
+            "gross",
+            "taxpayers",
+            "gain",
+            "corporations"
+        ],
+        "9": [
+            "fy2014-fy2018",
+            "lamps",
+            "staple",
+            "earmarks",
+            "platform",
+            "confirm",
+            "deficiencies",
+            "viii",
+            "strictly",
+            "streamlining"
+        ],
+        "10": [
+            "physician",
+            "hospital",
+            "medicare",
+            "medicaid",
+            "hospitals",
+            "physicians",
+            "furnished",
+            "xviii",
+            "coverage",
+            "beneficiaries"
+        ],
+        "11": [
+            "state",
+            "child",
+            "services",
+            "title",
+            "children",
+            "family",
+            "provide",
+            "training",
+            "assistance",
+            "enforcement"
+        ],
+        "12": [
+            "fy2014-fy2018",
+            "unobligated",
+            "stamp",
+            "seasonal",
+            "earmarks",
+            "fy2009",
+            "fy2016",
+            "index",
+            "rescinds",
+            "puerto_rico"
+        ],
+        "13": [
+            "armed_forces",
+            "active",
+            "retired",
+            "combat",
+            "veteran",
+            "war",
+            "contingency",
+            "served",
+            "veterans_affairs",
+            "reserve"
+        ],
+        "14": [
+            "cdc",
+            "strategy",
+            "acting",
+            "address",
+            "communities",
+            "director",
+            "center",
+            "prevention",
+            "collaborative",
+            "science"
+        ],
+        "15": [
+            "fy2014-fy2018",
+            "lamps",
+            "earmarks",
+            "staple",
+            "confirm",
+            "platform",
+            "deficiencies",
+            "streamlining",
+            "viii",
+            "strictly"
+        ],
+        "16": [
+            "fine",
+            "possession",
+            "firearm",
+            "substances",
+            "marijuana",
+            "offense",
+            "possess",
+            "firearms",
+            "ammunition",
+            "gambling"
+        ],
+        "17": [
+            "sec",
+            "congress",
+            "requires",
+            "report",
+            "activities",
+            "committees",
+            "security",
+            "federal",
+            "provide",
+            "title"
+        ],
+        "18": [
+            "securities",
+            "lending",
+            "creditor",
+            "banks",
+            "company",
+            "bank",
+            "fdic",
+            "debt",
+            "insured",
+            "depository"
+        ],
+        "19": [
+            "vehicle",
+            "fuel",
+            "renewable",
+            "carbon",
+            "electric",
+            "vehicles",
+            "clean",
+            "emissions",
+            "motor",
+            "coal"
+        ],
+        "20": [
+            "income",
+            "program",
+            "establish",
+            "sec",
+            "assistance",
+            "development",
+            "state",
+            "title",
+            "provide",
+            "requires"
+        ]
+    }
+}

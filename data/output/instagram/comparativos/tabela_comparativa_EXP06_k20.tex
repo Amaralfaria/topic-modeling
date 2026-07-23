@@ -1,0 +1,52 @@
+% Requer no preâmbulo:
+% \usepackage{booktabs}
+% \usepackage{xltabular}
+% \usepackage{array}
+% \usepackage{ragged2e}
+\begingroup
+\tiny % Fonte pequena recomendada para tabelas com muitas colunas
+\setlength{\tabcolsep}{3pt} % Reduz o espaçamento horizontal entre colunas
+\renewcommand{\arraystretch}{1.15} % Aumenta levemente o espaçamento vertical
+\begin{xltabular}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X@{}}
+    \caption{Comparativo dos tópicos extraídos para a base instagram ($K=20$, Top 5 palavras). Para cada algoritmo, foi selecionada a execução com o maior NPMI: BERTOPIC (Exp b, NPMI: 0.1740), CTM (Exp a, NPMI: 0.0997), LDA (Exp b, NPMI: 0.1558), PRODLDA (Exp c, NPMI: 0.1541). O Tópico -1 do BERTopic representa o ruído (outliers).}\label{tab:comparativo_instagram_exp06_k20}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endfirsthead
+
+    \caption[]{Comparativo dos tópicos extraídos para a base instagram ($K=20$, Top 5 palavras) -- continuação.}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{5}{r}{Continua na próxima página}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    \textbf{-1 (Ruído)} & anos, coluna, homem, bolsonaro, reprodução & - & - & - \\
+    \textbf{0} & presidente, lula, bolsonaro, governo, ministro & crianças, wilker, alunos, unb, instituição & energia, ano, dados, distrito\_federal, brasil & israel, gaza, hamas, reféns, cessar-fogo \\
+    \textbf{1} & anos, homem, carro, reprodução, mulher & família, amigos, arquivo, hospital, cirurgia & decisão, anos, caso, justiça, processo & amigos, papa, ana, francisco, brasília \\
+    \textbf{2} & brasil, brasília, jogo, site, jogos & admitindo, agrava, satisfatória, corremos, deplorável & trump, presidente, lula, brasil, estados\_unidos & stf, barroso, corte, ministro, ministros \\
+    \textbf{3} & israel, hamas, gaza, reféns, cessar-fogo & reajuste, vagas, rocha, ibaneis, gdf & presidente, trump, eua, governo, estados\_unidos & bebidas, alerta, chuvas, inmet, metanol \\
+    \textbf{4} & metanol, intoxicação, bebidas, casos, bebida & operação, apreensão, busca, esquema, investigações & saúde, metanol, casos, intoxicação, bebidas & fundo, azul, nobel, terno, prêmio \\
+    \textbf{5} & animais, animal, cães, gripe, gatos & energia, regiões, água, ibama, previsão & bolsonaro, ex-presidente, stf, jair, moraes & trump, eua, estados\_unidos, donald, presidente \\
+    \textbf{6} & china, petrobras, gás, petróleo, gasolina & defesa, pedido, decisão, recurso, advogados & homem, anos, mulher, coluna, mira & saúde, tratamento, paciente, médico, metanol \\
+    \textbf{7} & incêndio, fogo, chamas, cbmdf, fumaça & jogos, jogo, partida, novidades, site & brasil, mostra, mundo, anos, fundo & homem, cr1me, vít1ma, suspeito, mira \\
+    \textbf{8} & avião, aeronave, voo, barco, passageiros & metanol, intoxicação, bebidas, casos, bebida & stf, ministro, bolsonaro, julgamento, moraes & moraes, defesa, prisão, alexandre, bolsonaro \\
+    \textbf{9} & chuvas, inmet, umidade, temperaturas, calor & cbmdf, bombeiros, caminhão, chamas, resgate & israel, gaza, hamas, reféns, acordo & afazenda, oassunto, preferida, saory, capadodia \\
+    \textbf{10} & autista, autismo, espectro, filho, série & roberto, luís, barroso, aposentadoria, antecipada & nobel, prêmio, paz, papa, machado & operação, investigações, apreensão, mandados, esquema \\
+    \textbf{11} & rússia, ucrânia, kirk, trump, zelensky & atriz, personagem, filme, ator, odete & governo, projeto, câmara, congresso, senado & cbmdf, bombeiros, acidente, corpo\_de\_bombeiros\_militar\_do\_distrito\_federal, veículo \\
+    \textbf{12} & endurance, natação, atletas, inbras, triatlo & trump, encontro, eua, estados\_unidos, york & brasil, pessoas, gente, mulheres, entrevista & site, novidades, jogos, jogo, copa \\
+    \textbf{13} & morreu, luto, keaton, anos, atriz & país, venezuela, machado, luta, comitê & brasília, brasil, jogos, jogo, dia & odete, novela, atriz, roitman, personagem \\
+    \textbf{14} & prêmio, nobel, física, sorteio, mega-sena & israel, gaza, hamas, reféns, cessar-fogo & lula, presidente, encontra, jornalística, feira & mãe, criança, anos, filho, escola \\
+    \textbf{15} & câncer, mama, hospital\_sírio-libanês, diagnóstico, tumor & anistia, parlamentares, motta, câmara, deputado & operação, pcdf, coluna, dinheiro, investigações & empresa, animais, serviços, transporte, companhia \\
+    \textbf{16} & afazenda, exclusivos, assistir, transmissão, sinais & bolsonaro, julgamento, golpe, jair, golpista & distrito\_federal, será, federal, segurança, secretaria & dados, principais, pesquisa, pessoas, trabalho \\
+    \textbf{17} & liderança, ceo, conhecimento, vaga, experiência & mulher, teria, anos, dela, depoimento & cbmdf, carro, acidente, veículo, motorista & jornalística, encontra, feira, inácio, foto \\
+    \textbf{18} & doação, transplantes, órgãos, hub, transplante & pmdf, câmeras, pms, homens, abordagem & anos, família, mãe, redes, sociais & vagas, ibaneis, mdb, angular, concurso \\
+    \textbf{19} & - & bilhões, provisória, renda, imposto, fernando & vagas, dia, será, endurance, prova & câmara, congresso, proposta, câmara\_dos\_deputados, projeto \\
+\end{xltabular}
+\endgroup

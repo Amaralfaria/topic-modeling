@@ -225,7 +225,8 @@ __marimo__/
 .history
 .ionide
 
-data/*
+data/input/*
+result.jsonl
 ssh-script.sh
 topic-modeling/*
 .vscode/*

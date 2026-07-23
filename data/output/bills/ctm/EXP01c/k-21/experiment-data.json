@@ -1,0 +1,274 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-25 03:51:13",
+        "parameters": {
+            "n_topics": [
+                21
+            ],
+            "embedding_model": "all-MiniLM-L6-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.4611999810540309,
+        "adjusted_rand_index": 0.26149985331663067,
+        "normalized_mutual_information": 0.37508911163163905,
+        "npmi": 0.05546298569077079,
+        "topic_diversity": 0.9333333333333333
+    },
+    "topics": {
+        "0": [
+            "fine",
+            "offense",
+            "courts",
+            "criminal",
+            "violation",
+            "court",
+            "investigation",
+            "enforcement",
+            "offenses",
+            "sex"
+        ],
+        "1": [
+            "fda",
+            "device",
+            "labeling",
+            "product",
+            "substances",
+            "drug",
+            "devices",
+            "drugs",
+            "products",
+            "cpsc"
+        ],
+        "2": [
+            "hhs",
+            "hospital",
+            "treatment",
+            "physician",
+            "patient",
+            "acting",
+            "public_health_service_act",
+            "physicians",
+            "services",
+            "professionals"
+        ],
+        "3": [
+            "international",
+            "countries",
+            "country",
+            "israel",
+            "cbp",
+            "nationals",
+            "multilateral",
+            "human",
+            "trade",
+            "terrorist"
+        ],
+        "4": [
+            "title",
+            "provide",
+            "state",
+            "assistance",
+            "training",
+            "sec",
+            "services",
+            "children",
+            "amends",
+            "child"
+        ],
+        "5": [
+            "motor",
+            "vehicle",
+            "epa",
+            "coal",
+            "emissions",
+            "clean",
+            "carbon",
+            "stationary",
+            "electric",
+            "utility"
+        ],
+        "6": [
+            "armed_forces",
+            "contingency",
+            "combat",
+            "reserve",
+            "war",
+            "concerned",
+            "retired",
+            "deployed",
+            "active",
+            "air_force"
+        ],
+        "7": [
+            "secondary",
+            "academic",
+            "leas",
+            "college",
+            "lea",
+            "schools",
+            "teachers",
+            "grade",
+            "competitive",
+            "instructional"
+        ],
+        "8": [
+            "fy2014-fy2018",
+            "designee",
+            "migratory",
+            "confirm",
+            "delegate",
+            "execution",
+            "stop",
+            "february",
+            "run",
+            "reward"
+        ],
+        "9": [
+            "fy2014-fy2018",
+            "cents",
+            "bonuses",
+            "volunteers",
+            "retiring",
+            "confirm",
+            "earmarks",
+            "reprogramming",
+            "minimizing",
+            "allowable"
+        ],
+        "10": [
+            "suspension",
+            "suspend",
+            "temporarily",
+            "schedule",
+            "harmonized_tariff",
+            "staple",
+            "acid",
+            "temporary",
+            "lamps",
+            "fy2014-fy2018"
+        ],
+        "11": [
+            "interior",
+            "lands",
+            "trust",
+            "tribe",
+            "exchange",
+            "county",
+            "reservation",
+            "environmental",
+            "boundaries",
+            "area"
+        ],
+        "12": [
+            "index",
+            "titles",
+            "survivors",
+            "old",
+            "supplemental",
+            "puerto_rico",
+            "therapy",
+            "derivative",
+            "indicates",
+            "territories"
+        ],
+        "13": [
+            "repeated",
+            "version",
+            "designating",
+            "hawaii",
+            "measure",
+            "summary",
+            "introduced",
+            "amended",
+            "counties",
+            "minnesota"
+        ],
+        "14": [
+            "nsf",
+            "businesses",
+            "science",
+            "merit",
+            "ostp",
+            "regional",
+            "nist",
+            "technical",
+            "priorities",
+            "goals"
+        ],
+        "15": [
+            "agency",
+            "information",
+            "rule",
+            "head",
+            "usps",
+            "reports",
+            "review",
+            "board",
+            "mandates",
+            "government"
+        ],
+        "16": [
+            "sec",
+            "secretary",
+            "provide",
+            "safety",
+            "including",
+            "use",
+            "establish",
+            "act",
+            "report",
+            "congress"
+        ],
+        "17": [
+            "creditor",
+            "lending",
+            "card",
+            "default",
+            "company",
+            "mortgage",
+            "debt",
+            "insured",
+            "depository",
+            "fdic"
+        ],
+        "18": [
+            "corporation",
+            "stock",
+            "taxes",
+            "gross",
+            "gain",
+            "taxpayer",
+            "corporations",
+            "taxpayers",
+            "taxable",
+            "revenue"
+        ],
+        "19": [
+            "employer",
+            "workers",
+            "labor",
+            "unemployment",
+            "extended",
+            "wages",
+            "employment",
+            "compensation",
+            "employers",
+            "benefit"
+        ],
+        "20": [
+            "act",
+            "amends",
+            "state",
+            "title",
+            "certain",
+            "sec",
+            "federal",
+            "use",
+            "assistance",
+            "provide"
+        ]
+    }
+}

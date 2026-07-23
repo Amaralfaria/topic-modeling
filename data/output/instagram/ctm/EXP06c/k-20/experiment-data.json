@@ -1,0 +1,266 @@
+{
+    "metadata": {
+        "model": "CTM",
+        "date": "2026-06-26 15:02:57",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+            "context_size": 384
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.09743536205586308,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "ibaneis",
+            "reajuste",
+            "rocha",
+            "mdb",
+            "gdf",
+            "governador",
+            "transporte",
+            "governo_do_distrito_federal",
+            "vagas",
+            "decreto"
+        ],
+        "1": [
+            "operação",
+            "apreensão",
+            "busca",
+            "esquema",
+            "investigações",
+            "mandados",
+            "dinheiro",
+            "pcc",
+            "eram",
+            "alvos"
+        ],
+        "2": [
+            "venezuela",
+            "líder",
+            "machado",
+            "rússia",
+            "maduro",
+            "comitê",
+            "argentina",
+            "washington",
+            "nobel",
+            "milei"
+        ],
+        "3": [
+            "hoje",
+            "pessoas",
+            "indígenas",
+            "principais",
+            "edições",
+            "confere",
+            "popular",
+            "políticas",
+            "sociedade",
+            "país"
+        ],
+        "4": [
+            "sistemático",
+            "desrespeito",
+            "demonstraram",
+            "desumano",
+            "autoritária",
+            "represálias",
+            "severamente",
+            "imprescindível",
+            "nitidamente",
+            "nazismo"
+        ],
+        "5": [
+            "roberto",
+            "luís",
+            "barroso",
+            "corte",
+            "jorge",
+            "aposentadoria",
+            "flávio",
+            "gilmar",
+            "ministra",
+            "cristiano"
+        ],
+        "6": [
+            "lula",
+            "encontro",
+            "tarifaço",
+            "conversa",
+            "inácio",
+            "reunião",
+            "york",
+            "vieira",
+            "petista",
+            "ricardo"
+        ],
+        "7": [
+            "escola",
+            "família",
+            "criança",
+            "estudante",
+            "passou",
+            "mãe",
+            "menina",
+            "unidade",
+            "aula",
+            "filho"
+        ],
+        "8": [
+            "jogos",
+            "jogo",
+            "novidades",
+            "site",
+            "partida",
+            "realização",
+            "copa",
+            "ingressos",
+            "shows",
+            "rodada"
+        ],
+        "9": [
+            "pmdf",
+            "câmeras",
+            "abordagem",
+            "pms",
+            "polícia_militar_do_distrito_federal",
+            "aparece",
+            "homem",
+            "imagens",
+            "homens",
+            "confusão"
+        ],
+        "10": [
+            "filme",
+            "papa",
+            "atriz",
+            "ator",
+            "memória",
+            "cinema",
+            "homenagem",
+            "personagem",
+            "autismo",
+            "casamento"
+        ],
+        "11": [
+            "ex-presidente",
+            "bolsonaro",
+            "moraes",
+            "jair",
+            "domiciliar",
+            "alexandre",
+            "pgr",
+            "defesa",
+            "apoiadores",
+            "condenação"
+        ],
+        "12": [
+            "câmara",
+            "texto",
+            "câmara_dos_deputados",
+            "motta",
+            "votação",
+            "congresso",
+            "deputados",
+            "isenção",
+            "provisória",
+            "senado"
+        ],
+        "13": [
+            "decisão",
+            "inss",
+            "tjdft",
+            "danos",
+            "distrital",
+            "judicial",
+            "territórios",
+            "irregularidades",
+            "empresa",
+            "mpdft"
+        ],
+        "14": [
+            "israel",
+            "gaza",
+            "hamas",
+            "cessar-fogo",
+            "reféns",
+            "netanyahu",
+            "israelense",
+            "israelenses",
+            "faixa_de_gaza",
+            "palestinos"
+        ],
+        "15": [
+            "metanol",
+            "casos",
+            "intoxicação",
+            "bebidas",
+            "bebida",
+            "ministério_da_saúde",
+            "saúde",
+            "exames",
+            "mortes",
+            "alcoólicas"
+        ],
+        "16": [
+            "exercer",
+            "portuguesa",
+            "língua",
+            "apple",
+            "colaborar",
+            "textos",
+            "requisitos",
+            "domínio",
+            "capazes",
+            "ciência"
+        ],
+        "17": [
+            "energia",
+            "chuvas",
+            "baixa",
+            "previsão",
+            "máxima",
+            "elétrica",
+            "gasolina",
+            "regiões",
+            "preço",
+            "ibge"
+        ],
+        "18": [
+            "cbmdf",
+            "bombeiros",
+            "acidente",
+            "chamas",
+            "resgate",
+            "caminhão",
+            "avião",
+            "pista",
+            "incêndio",
+            "aeronave"
+        ],
+        "19": [
+            "anos",
+            "vi0lência",
+            "mulher",
+            "cr1me",
+            "companheira",
+            "companheiro",
+            "relacionamento",
+            "vít1ma",
+            "dela",
+            "idosa"
+        ]
+    }
+}

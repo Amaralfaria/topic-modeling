@@ -1,0 +1,61 @@
+% Requer no preâmbulo:
+% \usepackage{booktabs}
+% \usepackage{xltabular}
+% \usepackage{array}
+% \usepackage{ragged2e}
+\begingroup
+\tiny % Fonte pequena recomendada para tabelas com muitas colunas
+\setlength{\tabcolsep}{3pt} % Reduz o espaçamento horizontal entre colunas
+\begin{xltabular}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X@{}}
+    \caption{Comparativo dos tópicos extraídos para a base instagram ($K=30$, Top 5 palavras). Para cada algoritmo, foi selecionada a execução com o maior NPMI: BERTOPIC (Exp c, NPMI: 0.1726), CTM (Exp b, NPMI: 0.0713), LDA (Exp c, NPMI: 0.1389), PRODLDA (Exp c, NPMI: 0.1445). O Tópico -1 do BERTopic representa o ruído (outliers).}\label{tab:comparativo_instagram_exp06_k30}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endfirsthead
+
+    \caption[]{Comparativo dos tópicos extraídos para a base instagram ($K=30$, Top 5 palavras) -- continuação.}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{5}{r}{Continua na próxima página}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    \textbf{-1 (Ruído)} & anos, presidente, coluna, bolsonaro, disse & - & - & - \\
+    \textbf{0} & presidente, bolsonaro, lula, trump, governo & odete, apple, portuguesa, roitman, novela & operação, pcdf, coluna, mira, busca & decisão, processo, tjdft, territórios, justiça \\
+    \textbf{1} & homem, carro, anos, veículo, motorista & pega, sai, objeto, câmeras, assalto & stf, ministro, bolsonaro, julgamento, supremo\_tribunal\_federal & metanol, intoxicação, bebidas, casos, saúde \\
+    \textbf{2} & metanol, intoxicação, bebidas, casos, bebida & família, contou, mãe, pessoal, sonho & israel, gaza, hamas, reféns, acordo & homem, imagens, câmeras, seguida, mira \\
+    \textbf{3} & filme, banda, anos, show, odete & transporte, diário, deverão, feriados, rocha & bolsonaro, ex-presidente, stf, jair, moraes & vagas, provas, inscrições, prova, candidatos \\
+    \textbf{4} & brasil, cop30, milhões, ibge, trabalho & animais, pacientes, zoológico, exames, quadro & governo, projeto, câmara, congresso, senado & timão, quartas, chiefs, copadomundo, domingol \\
+    \textbf{5} & israel, hamas, gaza, reféns, cessar-fogo & distrital, cldf, angular, sindicato, daniel & energia, região, empresa, moradores, elétrica & animais, animal, encontraram, pmdf, residência \\
+    \textbf{6} & endurance, jogo, jogos, copa, site & fux, julgamento, golpista, dino, réus & saúde, hospital, anos, médico, paciente & pcdf, polícia\_civil\_do\_distrito\_federal, busca, operação, investigações \\
+    \textbf{7} & energia, transporte, neoenergia, ônibus, região & chamas, avião, aeronave, explosão, cobra & crianças, brasil, pessoas, anos, reportagem & empresas, responsável, milhões, empresa, dinheiro \\
+    \textbf{8} & animais, animal, cães, gatos, zoológico & empresas, fraude, inss, empresa, esquema & cbmdf, carro, motorista, acidente, anos & taxa, dados, jornalística, encontra, economia \\
+    \textbf{9} & mulheres, saúde, bebê, mulher, aborto & alexandre, domiciliar, moraes, eletrônica, ex-presidente & imagem, fundo, mostra, texto, azul & alerta, risco, doenças, pesquisadores, longo \\
+    \textbf{10} & papa, vaticano, francisco, fiéis, leão & show, papa, música, banda, trajetória & evento, show, brasília, música, banda & deputado, eduardo, câmara, parlamentar, parlamentares \\
+    \textbf{11} & vagas, candidatos, concurso, inscrições, ensino & corremos, autoritária, batalhas, causaria, autorize & metanol, bebidas, intoxicação, casos, endurance & trump, eua, donald, estados\_unidos, paz \\
+    \textbf{12} & incêndio, fogo, chamas, cbmdf, fumaça & prova, abertas, evento, corrida, realizado & trump, presidente, lula, estados\_unidos, brasil & incêndio, energia, prédio, moradores, fogo \\
+    \textbf{13} & inmet, chuvas, umidade, temperaturas, chuva & ajuda, thiago, ativistas, internacionais, flotilha & decisão, justiça, caso, processo, defesa & acidente, cbmdf, corpo\_de\_bombeiros\_militar\_do\_distrito\_federal, veículo, m0rreu \\
+    \textbf{14} & autismo, autista, espectro, filho, série & bebidas, metanol, bebida, intoxicação, mortes & anos, filme, brasil, história, melhor & família, criança, mãe, pai, filho \\
+    \textbf{15} & avião, aeronave, voo, barco, spacex & reféns, netanyahu, terrorista, hamas, primeiro-ministro & empresas, milhões, empresa, inss, bilhões & fundo, imagem, azul, terno, branca \\
+    \textbf{16} & kirk, rússia, ucrânia, charlie, trump & jogo, partida, futebol, copa, campeonato & ano, dados, distrito\_federal, período, país & lula, presidente, trump, brasil, encontro \\
+    \textbf{17} & preferida, oassunto, áudio, ouvir, liderança & estudo, comunidades, explica, racismo, pesquisadores & pessoas, atualizações, notícias, cidade, cerca & distrito\_federal, mdb, gdf, ibaneis, angular \\
+    \textbf{18} & petrobras, gás, petróleo, gasolina, preço & provisória, bilhões, fernando, juros, taxa & lula, presidente, encontra, jornalística, feira & brasília, dia, redes, sociais, novidades \\
+    \textbf{19} & flotilha, israel, ativistas, thiago, ativista & busca, dr0gas, tráf1co, apreensão, temporária & governador, federal, distrito\_federal, angular, segurança & anos, cr1me, vít1ma, mulher, vítima \\
+    \textbf{20} & morreu, luto, keaton, atriz, anos & roberto, luís, aposentadoria, confiança, jorge & jogo, jogos, copa, partida, brasil & odete, atriz, novela, roitman, filme \\
+    \textbf{21} & câncer, mama, hospital\_sírio-libanês, diagnóstico, tumor & energia, previsão, alerta, máxima, regiões & anos, família, disse, gente, mãe & mulheres, principais, hoje, brasil, pessoas \\
+    \textbf{22} & china, tarifas, chinês, trump, produtos & cr1me, companheiro, companheira, m4tar, alex & brasil, país, mulheres, hoje, paulo & projeto, texto, proposta, imposto, medida \\
+    \textbf{23} & vacina, dengue, vacinação, doses, mosquitos & motta, câmara, davi, hugo, câmara\_dos\_deputados & homem, pmdf, policiais, coluna, segurança & israel, hamas, gaza, reféns, acordo \\
+    \textbf{24} & nobel, prêmio, física, medicina, descobertas & edições, 17h, confere, popular, extrema & venezuela, nobel, prêmio, paz, maduro & pessoas, região, autoridades, brasileiros, costa \\
+    \textbf{25} & afazenda, exclusivos, assistir, transmissão, sinais & tjdft, territórios, justiça, recurso, danos & vagas, concurso, será, pessoas, dia & stf, ministro, corte, ministros, barroso \\
+    \textbf{26} & sorteio, mega-sena, dezenas, apostas, acertou & pablo, vídeos, servidor, caso, santiago & escola, unb, professores, professor, alunos & política, lula, governo, eleições, eleição \\
+    \textbf{27} & profundezas, descoberta, mergulhador, jonatas, expedição & encontro, conversa, tarifaço, york, telefone & redes, sociais, notícias, paulo, odete & atos, ato, policiais, agentes, janeiro \\
+    \textbf{28} & bunny, bad, porto-riquenho, super\_bowl, intervalo & venezuela, machado, milei, maduro, nobel & animais, incêndio, animal, fogo, cães & afazenda, oassunto, preferida, habilidade, planilhas \\
+    \textbf{29} & - & motorista, carro, veículo, acidente, controle & anos, mulher, vít1ma, teria, vítima & bolsonaro, jair, ex-presidente, golpe, julgamento \\
+\end{xltabular}
+\endgroup

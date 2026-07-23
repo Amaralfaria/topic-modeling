@@ -1,0 +1,52 @@
+% Requer no preâmbulo:
+% \usepackage{booktabs}
+% \usepackage{xltabular}
+% \usepackage{array}
+% \usepackage{ragged2e}
+\begingroup
+\tiny % Fonte pequena recomendada para tabelas com muitas colunas
+\setlength{\tabcolsep}{3pt} % Reduz o espaçamento horizontal entre colunas
+\begin{xltabular}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X@{}}
+    \caption{Comparativo dos tópicos extraídos para a base bills ($K=21$, Top 5 palavras). Para cada algoritmo, foi selecionada a execução com o maior NPMI: BERTOPIC (Exp c, NPMI: 0.1676), CTM (Exp a, NPMI: 0.0648), LDA (Exp b, NPMI: 0.1181), PRODLDA (Exp a, NPMI: 0.1572). O Tópico -1 do BERTopic representa o ruído (outliers).}\label{tab:comparativo_bills_exp01_k21}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endfirsthead
+
+    \caption[]{Comparativo dos tópicos extraídos para a base bills ($K=21$, Top 5 palavras) -- continuação.}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{5}{r}{Continua na próxima página}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    \textbf{-1 (Ruído)} & act, secretary, requires, amends, federal & - & - & - \\
+    \textbf{0} & secretary, energy, water, land, act & device, devices, safety, information, operator & alien, united\_states, secretary, immigration, dhs & agency, financial, executive, government, rule \\
+    \textbf{1} & education, programs, students, school, program & fy2014-fy2018, unobligated, territories, viii, delegate & information, federal, state, person, requires & consumer, drug, product, drugs, fda \\
+    \textbf{2} & tax, business, small, revenue, income & water, environmental, federal, wildlife, management & tax, revenue, code, credit, internal & education, student, educational, school, students \\
+    \textbf{3} & act, information, agency, requires, consumer & state, assistance, services, income, eligible & land, secretary, federal, lands, tribe & care, health, medicare, coverage, services \\
+    \textbf{4} & health, medicare, care, act, services & academic, college, student, schools, secondary & drug, product, secretary, food, requires & employer, employment, compensation, employee, period \\
+    \textbf{5} & sec, alien, secretary, iran, defense & wilderness, convey, county, park, conveyance & loan, financial, mortgage, consumer, credit & country, countries, united\_states, international, nationals \\
+    \textbf{6} & harmonized\_tariff, duty, schedule, united\_states, temporarily & building, version, repeated, ohio, broadband & health, medicare, title, plan, care & business, small, loan, loans, mortgage \\
+    \textbf{7} & veterans, care, veteran, secretary, medical & suspension, suspend, temporarily, schedule, harmonized\_tariff & program, assistance, housing, secretary, state & designee, express, ballots, voters, polling \\
+    \textbf{8} & product, food, drug, act, safety & fine, offense, firearms, district, violation & education, school, students, program, programs & fuel, gas, renewable, production, clean \\
+    \textbf{9} & labor, employee, act, employer, discrimination & cdc, hiv, acting, communities, center & sec, secretary, report, requires, appropriations & indicates, cpi, xvi, index, titles \\
+    \textbf{10} & election, candidate, political, voting, voter & state, general, information, title, law & criminal, law, federal, enforcement, state & armed\_forces, veterans\_affairs, department\_of\_veterans\_affairs, veteran, member \\
+    \textbf{11} & designates, united\_states\_postal\_service, located, building, facility & corporation, tax, taxes, taxpayer, stock & united\_states, duty, schedule, harmonized\_tariff, temporarily & internal, revenue, code, deduction, taxpayers \\
+    \textbf{12} & war, commission, commemorative, flag, study & workers, old, employer, worker, age & foreign, president, united\_states, government, congress & requires, secretary, directs, sec, report \\
+    \textbf{13} & usps, postal, stamp, delivery, mail & volunteers, fy2014-fy2018, cents, allowable, fsa & veterans, secretary, service, member, military & act, state, program, amends, provide \\
+    \textbf{14} & district, judge, judges, ninth\_circuit, circuit & emissions, power, carbon, epa, industrial & program, requires, research, small, establish & enforcement, criminal, law, attorney, penalties \\
+    \textbf{15} & cuba, cuban, travel, transactions, export & medicare, hospital, medicaid, physician, xviii & transportation, secretary, safety, air, directs & harmonized\_tariff, temporarily, suspension, suspend, schedule \\
+    \textbf{16} & map, unit, entitled, barrier, coastal\_barrier\_resources\_act & international, countries, terrorism, counter, president & agency, requires, federal, report, rule & version, repeated, introduced, federal\_aviation\_administration, summary \\
+    \textbf{17} & life, human, moment, fertilization, cloning & board, company, bank, banks, lending & health, care, secretary, services, programs & research, coordinate, develop, address, promote \\
+    \textbf{18} & jerusalem, israel, abroad, buildings, opened & armed\_forces, active, contingency, retired, reserve & water, secretary, project, projects, federal & convey, conveyance, conveyed, wilderness, blm \\
+    \textbf{19} & saint, lawrence, port, lakes, great & substances, livestock, migratory, endangered, counter & federal, state, election, measure, amended & act, program, secretary, requires, programs \\
+    \textbf{20} & - & sec, requires, congress, report, committees & energy, gas, oil, secretary, fuel & federal, act, water, project, public \\
+\end{xltabular}
+\endgroup

@@ -1,0 +1,144 @@
+{
+    "metadata": {
+        "model": "prodLDA",
+        "date": "2026-06-26 15:42:35",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.15643601808321916,
+        "topic_diversity": 1.0
+    },
+    "topics": {
+        "0": [
+            "stf",
+            "bolsonaro",
+            "julgamento",
+            "moraes",
+            "ex-presidente",
+            "jair",
+            "alexandre",
+            "supremo_tribunal_federal",
+            "ministro",
+            "golpe"
+        ],
+        "1": [
+            "mãe",
+            "família",
+            "anos",
+            "pai",
+            "escola",
+            "filho",
+            "criança",
+            "tinha",
+            "dela",
+            "filha"
+        ],
+        "2": [
+            "proposta",
+            "senado",
+            "texto",
+            "câmara",
+            "congresso",
+            "imposto",
+            "parlamentares",
+            "projeto",
+            "deputados",
+            "votação"
+        ],
+        "3": [
+            "metanol",
+            "operação",
+            "bebidas",
+            "intoxicação",
+            "mandados",
+            "apreensão",
+            "busca",
+            "investigação",
+            "esquema",
+            "casos"
+        ],
+        "4": [
+            "israel",
+            "gaza",
+            "hamas",
+            "guerra",
+            "reféns",
+            "cessar-fogo",
+            "israelense",
+            "faixa_de_gaza",
+            "palestinos",
+            "israelenses"
+        ],
+        "5": [
+            "novidades",
+            "ingressos",
+            "aproveite",
+            "site",
+            "ingresso",
+            "jogos",
+            "copa",
+            "jogo",
+            "partida",
+            "brasília"
+        ],
+        "6": [
+            "veículo",
+            "carro",
+            "pmdf",
+            "cbmdf",
+            "polícia_militar_do_distrito_federal",
+            "acidente",
+            "homem",
+            "motorista",
+            "fogo",
+            "imagens"
+        ],
+        "7": [
+            "vagas",
+            "áreas",
+            "período",
+            "secretaria",
+            "regiões",
+            "atividades",
+            "médio",
+            "distrito_federal",
+            "serviços",
+            "risco"
+        ],
+        "8": [
+            "criminaliza",
+            "indignado",
+            "dartora",
+            "polícia_legislativa_federal_da_câmara_dos_deputados",
+            "agricultora",
+            "agricultor",
+            "enquadrou",
+            "heil",
+            "categoricamente",
+            "desenharam"
+        ],
+        "9": [
+            "nobel",
+            "brasil",
+            "prêmio",
+            "lula",
+            "entrevista",
+            "corina",
+            "país",
+            "machado",
+            "brasileira",
+            "conversa"
+        ]
+    }
+}

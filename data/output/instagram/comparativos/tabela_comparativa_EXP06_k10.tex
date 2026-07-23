@@ -1,0 +1,42 @@
+% Requer no preâmbulo:
+% \usepackage{booktabs}
+% \usepackage{xltabular}
+% \usepackage{array}
+% \usepackage{ragged2e}
+\begingroup
+\tiny % Fonte pequena recomendada para tabelas com muitas colunas
+\setlength{\tabcolsep}{3pt} % Reduz o espaçamento horizontal entre colunas
+\renewcommand{\arraystretch}{1.15} % Aumenta levemente o espaçamento vertical
+\begin{xltabular}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X@{}}
+    \caption{Comparativo dos tópicos extraídos para a base instagram ($K=10$, Top 5 palavras). Para cada algoritmo, foi selecionada a execução com o maior NPMI: BERTOPIC (Exp b, NPMI: 0.1389), CTM (Exp a, NPMI: 0.1486), LDA (Exp c, NPMI: 0.1337), PRODLDA (Exp a, NPMI: 0.1564). O Tópico -1 do BERTopic representa o ruído (outliers).}\label{tab:comparativo_instagram_exp06_k10}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endfirsthead
+
+    \caption[]{Comparativo dos tópicos extraídos para a base instagram ($K=10$, Top 5 palavras) -- continuação.}\\
+    \toprule
+    \textbf{Tópico} & \textbf{BERTOPIC} & \textbf{CTM} & \textbf{LDA} & \textbf{PRODLDA} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{5}{r}{Continua na próxima página}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    \textbf{-1 (Ruído)} & anos, homem, coluna, reprodução, presidente & - & - & - \\
+    \textbf{0} & anos, presidente, bolsonaro, lula, governo & israel, gaza, hamas, reféns, cessar-fogo & bolsonaro, stf, ministro, ex-presidente, julgamento & stf, bolsonaro, julgamento, moraes, ex-presidente \\
+    \textbf{1} & israel, hamas, gaza, reféns, trump & direito\_internacional\_público, razoáveis, soberana, deliberações, decididos & saúde, metanol, casos, intoxicação, bebidas & mãe, família, anos, pai, escola \\
+    \textbf{2} & anos, banda, filme, show, cinema & nobel, brasil, venezuela, tarifas, encontro & brasília, será, dia, site, brasil & proposta, senado, texto, câmara, congresso \\
+    \textbf{3} & endurance, jogo, jogos, site, copa & metanol, saúde, intoxicação, casos, bebidas & anos, operação, coluna, pcdf, prisão & metanol, operação, bebidas, intoxicação, mandados \\
+    \textbf{4} & animais, animal, cães, gatos, cachorro & congresso, senado, câmara, texto, votação & presidente, lula, trump, governo, brasil & israel, gaza, hamas, guerra, reféns \\
+    \textbf{5} & china, gasolina, tarifas, economia, trump & stf, julgamento, moraes, bolsonaro, ex-presidente & anos, vida, redes, pessoas, sociais & novidades, ingressos, aproveite, site, ingresso \\
+    \textbf{6} & câncer, mama, hospital\_sírio-libanês, diagnóstico, tumor & cbmdf, bombeiros, corpo\_de\_bombeiros\_militar\_do\_distrito\_federal, chamas, caminhão & israel, gaza, hamas, acordo, reféns & veículo, carro, pmdf, cbmdf, polícia\_militar\_do\_distrito\_federal \\
+    \textbf{7} & nobel, prêmio, física, medicina, mary & mãe, anos, casa, tinha, família & distrito\_federal, federal, será, dia, angular & vagas, áreas, período, secretaria, regiões \\
+    \textbf{8} & conhecimento, vaga, experiência, desejável, planilhas & site, jogos, abertas, novidades, brasília & governo, ano, brasil, bilhões, país & criminaliza, indignado, dartora, polícia\_legislativa\_federal\_da\_câmara\_dos\_deputados, agricultora \\
+    \textbf{9} & - & operação, esquema, dinheiro, reajuste, empresas & anos, homem, mulher, reprodução, carro & nobel, brasil, prêmio, lula, entrevista \\
+\end{xltabular}
+\endgroup

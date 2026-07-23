@@ -1,0 +1,265 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-26 15:38:39",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.1570378704807097,
+        "topic_diversity": 0.9421052631578948
+    },
+    "topics": {
+        "-1": [
+            "anos",
+            "coluna",
+            "presidente",
+            "bolsonaro",
+            "reprodução",
+            "homem",
+            "disse",
+            "pessoas",
+            "caso",
+            "durante"
+        ],
+        "0": [
+            "presidente",
+            "bolsonaro",
+            "lula",
+            "governo",
+            "stf",
+            "ministro",
+            "trump",
+            "disse",
+            "ex-presidente",
+            "brasil"
+        ],
+        "1": [
+            "metanol",
+            "homem",
+            "intoxicação",
+            "bebidas",
+            "anos",
+            "casos",
+            "reprodução",
+            "coluna",
+            "policiais",
+            "carro"
+        ],
+        "2": [
+            "brasil",
+            "jogo",
+            "jogos",
+            "copa",
+            "dia",
+            "rodada",
+            "inmet",
+            "palmeiras",
+            "brasileiro",
+            "site"
+        ],
+        "3": [
+            "anos",
+            "papa",
+            "show",
+            "banda",
+            "filme",
+            "brasília",
+            "família",
+            "dia",
+            "música",
+            "odete"
+        ],
+        "4": [
+            "israel",
+            "gaza",
+            "hamas",
+            "reféns",
+            "cessar-fogo",
+            "palestinos",
+            "israelenses",
+            "faixa_de_gaza",
+            "israelense",
+            "acordo"
+        ],
+        "5": [
+            "animais",
+            "animal",
+            "cães",
+            "gatos",
+            "cachorro",
+            "cão",
+            "cadela",
+            "pcdf",
+            "drca",
+            "zoológico"
+        ],
+        "6": [
+            "incêndio",
+            "energia",
+            "fogo",
+            "chamas",
+            "cbmdf",
+            "neoenergia",
+            "fumaça",
+            "apagão",
+            "bombeiros",
+            "corpo_de_bombeiros_militar_do_distrito_federal"
+        ],
+        "7": [
+            "avião",
+            "aeronave",
+            "voo",
+            "barco",
+            "passageiros",
+            "bordo",
+            "spacex",
+            "pessoas",
+            "cbmdf",
+            "companhia"
+        ],
+        "8": [
+            "china",
+            "petrobras",
+            "gás",
+            "petróleo",
+            "gasolina",
+            "tarifas",
+            "preço",
+            "trump",
+            "preços",
+            "ibama"
+        ],
+        "9": [
+            "autista",
+            "autismo",
+            "espectro",
+            "filho",
+            "série",
+            "anos",
+            "criança",
+            "menino",
+            "diagnóstico",
+            "mãe"
+        ],
+        "10": [
+            "rússia",
+            "ucrânia",
+            "kirk",
+            "trump",
+            "putin",
+            "zelensky",
+            "charlie",
+            "presidente",
+            "guerra",
+            "otan"
+        ],
+        "11": [
+            "endurance",
+            "natação",
+            "atletas",
+            "inbras",
+            "triatlo",
+            "aquathlon",
+            "evento",
+            "abertas",
+            "competição",
+            "prova"
+        ],
+        "12": [
+            "morreu",
+            "luto",
+            "anos",
+            "keaton",
+            "atriz",
+            "jornalista",
+            "lbv",
+            "netto",
+            "paiva",
+            "diane"
+        ],
+        "13": [
+            "câncer",
+            "mama",
+            "hospital_sírio-libanês",
+            "diagnóstico",
+            "tumor",
+            "mulheres",
+            "tratamento",
+            "desenvolvida",
+            "pele",
+            "dúvidas"
+        ],
+        "14": [
+            "nobel",
+            "prêmio",
+            "física",
+            "medicina",
+            "mary",
+            "descobertas",
+            "brunkow",
+            "imunológico",
+            "john",
+            "sakaguchi"
+        ],
+        "15": [
+            "vagas",
+            "experiência",
+            "oportunidades",
+            "agências",
+            "trabalhador",
+            "ensino",
+            "remuneração",
+            "escolaridade",
+            "emprego",
+            "salários"
+        ],
+        "16": [
+            "liderança",
+            "ceo",
+            "conhecimento",
+            "vaga",
+            "experiência",
+            "17h30",
+            "desejável",
+            "planilhas",
+            "habilidade",
+            "computadores"
+        ],
+        "17": [
+            "sorteio",
+            "mega-sena",
+            "dezenas",
+            "apostas",
+            "acertou",
+            "acertaram",
+            "aposta",
+            "concurso",
+            "sorteados",
+            "quina"
+        ],
+        "18": [
+            "terremoto",
+            "magnitude",
+            "filipinas",
+            "tsunami",
+            "tremor",
+            "ondas",
+            "tremores",
+            "atingiu",
+            "horário",
+            "afeganistão"
+        ]
+    }
+}

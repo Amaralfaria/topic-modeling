@@ -1,0 +1,144 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-26 12:41:53",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.11327855894426173,
+        "topic_diversity": 0.84
+    },
+    "topics": {
+        "0": [
+            "presidente",
+            "lula",
+            "governo",
+            "disse",
+            "política",
+            "atualizações",
+            "projeto",
+            "anistia",
+            "senado",
+            "congresso"
+        ],
+        "1": [
+            "anos",
+            "homem",
+            "mulher",
+            "reprodução",
+            "carro",
+            "coluna",
+            "pmdf",
+            "teria",
+            "vítima",
+            "vít1ma"
+        ],
+        "2": [
+            "operação",
+            "pcdf",
+            "coluna",
+            "prisão",
+            "mira",
+            "investigação",
+            "dinheiro",
+            "reprodução",
+            "investigações",
+            "anos"
+        ],
+        "3": [
+            "saúde",
+            "metanol",
+            "casos",
+            "intoxicação",
+            "bebidas",
+            "animais",
+            "paulo",
+            "anos",
+            "hospital",
+            "tratamento"
+        ],
+        "4": [
+            "distrito_federal",
+            "federal",
+            "será",
+            "secretaria",
+            "coluna",
+            "angular",
+            "dia",
+            "público",
+            "pública",
+            "lei"
+        ],
+        "5": [
+            "stf",
+            "bolsonaro",
+            "ministro",
+            "ex-presidente",
+            "julgamento",
+            "moraes",
+            "jair",
+            "supremo_tribunal_federal",
+            "alexandre",
+            "prisão"
+        ],
+        "6": [
+            "anos",
+            "vida",
+            "redes",
+            "brasil",
+            "sociais",
+            "pessoas",
+            "dia",
+            "gente",
+            "vídeo",
+            "mundo"
+        ],
+        "7": [
+            "brasil",
+            "energia",
+            "ano",
+            "país",
+            "região",
+            "cerca",
+            "dados",
+            "pessoas",
+            "milhões",
+            "pesquisa"
+        ],
+        "8": [
+            "brasília",
+            "dia",
+            "será",
+            "site",
+            "jogos",
+            "evento",
+            "jogo",
+            "endurance",
+            "brasil",
+            "prova"
+        ],
+        "9": [
+            "trump",
+            "presidente",
+            "israel",
+            "estados_unidos",
+            "eua",
+            "donald",
+            "brasil",
+            "governo",
+            "gaza",
+            "hamas"
+        ]
+    }
+}

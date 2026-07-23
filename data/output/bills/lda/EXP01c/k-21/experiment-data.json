@@ -1,0 +1,272 @@
+{
+    "metadata": {
+        "model": "LDA",
+        "date": "2026-06-02 00:17:56",
+        "parameters": {
+            "n_topics": [
+                21
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.508025903594854,
+        "adjusted_rand_index": 0.3107702561716963,
+        "normalized_mutual_information": 0.4361919664775332,
+        "npmi": 0.10902666472207072,
+        "topic_diversity": 0.6857142857142857
+    },
+    "topics": {
+        "0": [
+            "federal",
+            "state",
+            "law",
+            "person",
+            "action",
+            "court",
+            "criminal",
+            "civil",
+            "prohibits",
+            "enforcement"
+        ],
+        "1": [
+            "financial",
+            "mortgage",
+            "consumer",
+            "credit",
+            "loan",
+            "insurance",
+            "requirements",
+            "requires",
+            "institution",
+            "company"
+        ],
+        "2": [
+            "information",
+            "requires",
+            "service",
+            "security",
+            "electronic",
+            "data",
+            "records",
+            "federal",
+            "internet",
+            "public"
+        ],
+        "3": [
+            "secretary",
+            "veterans",
+            "military",
+            "service",
+            "dod",
+            "members",
+            "defense",
+            "member",
+            "directs",
+            "requires"
+        ],
+        "4": [
+            "energy",
+            "fuel",
+            "renewable",
+            "secretary",
+            "requires",
+            "program",
+            "gas",
+            "electric",
+            "carbon",
+            "administrator"
+        ],
+        "5": [
+            "water",
+            "secretary",
+            "research",
+            "program",
+            "requires",
+            "project",
+            "projects",
+            "federal",
+            "activities",
+            "development"
+        ],
+        "6": [
+            "foreign",
+            "president",
+            "united_states",
+            "congress",
+            "government",
+            "iran",
+            "country",
+            "assistance",
+            "directs",
+            "international"
+        ],
+        "7": [
+            "small",
+            "business",
+            "loan",
+            "program",
+            "student",
+            "loans",
+            "education",
+            "sba",
+            "businesses",
+            "assistance"
+        ],
+        "8": [
+            "health",
+            "care",
+            "secretary",
+            "services",
+            "programs",
+            "child",
+            "grants",
+            "requires",
+            "provide",
+            "program"
+        ],
+        "9": [
+            "tax",
+            "revenue",
+            "code",
+            "internal",
+            "credit",
+            "income",
+            "qualified",
+            "property",
+            "deduction",
+            "business"
+        ],
+        "10": [
+            "sec",
+            "requires",
+            "report",
+            "agency",
+            "federal",
+            "congress",
+            "review",
+            "year",
+            "title",
+            "information"
+        ],
+        "11": [
+            "secretary",
+            "transportation",
+            "safety",
+            "air",
+            "directs",
+            "airport",
+            "faa",
+            "security",
+            "vessel",
+            "requires"
+        ],
+        "12": [
+            "program",
+            "assistance",
+            "secretary",
+            "housing",
+            "funds",
+            "state",
+            "sec",
+            "appropriations",
+            "authorizes",
+            "grants"
+        ],
+        "13": [
+            "education",
+            "school",
+            "students",
+            "programs",
+            "program",
+            "schools",
+            "state",
+            "educational",
+            "grants",
+            "requires"
+        ],
+        "14": [
+            "health",
+            "medicare",
+            "care",
+            "services",
+            "title",
+            "security",
+            "coverage",
+            "plan",
+            "social",
+            "insurance"
+        ],
+        "15": [
+            "oil",
+            "gas",
+            "secretary",
+            "lease",
+            "state",
+            "federal",
+            "natural",
+            "production",
+            "leasing",
+            "permit"
+        ],
+        "16": [
+            "united_states",
+            "duty",
+            "schedule",
+            "harmonized_tariff",
+            "temporarily",
+            "measure",
+            "suspend",
+            "extend",
+            "suspension",
+            "amended"
+        ],
+        "17": [
+            "drug",
+            "secretary",
+            "product",
+            "food",
+            "requires",
+            "products",
+            "safety",
+            "drugs",
+            "requirements",
+            "fda"
+        ],
+        "18": [
+            "alien",
+            "united_states",
+            "immigration",
+            "secretary",
+            "dhs",
+            "status",
+            "visa",
+            "state",
+            "aliens",
+            "program"
+        ],
+        "19": [
+            "land",
+            "secretary",
+            "federal",
+            "lands",
+            "tribe",
+            "indian",
+            "interior",
+            "requires",
+            "public",
+            "area"
+        ],
+        "20": [
+            "employee",
+            "employees",
+            "federal",
+            "election",
+            "employer",
+            "requires",
+            "state",
+            "labor",
+            "requirements",
+            "political"
+        ]
+    }
+}

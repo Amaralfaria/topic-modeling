@@ -1,0 +1,9 @@
+{
+    "metrics": {
+        "harmonic_purity": 0.37202914042214785,
+        "adjusted_rand_index": 0.13072152114663577,
+        "normalized_mutual_information": 0.3250524003237123,
+        "npmi": 0.1597932202383601,
+        "topic_diversity": 0.8466666666666667
+    }
+}

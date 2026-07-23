@@ -1,0 +1,145 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-26 15:36:12",
+        "parameters": {
+            "n_topics": [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0,
+        "adjusted_rand_index": 0,
+        "normalized_mutual_information": 0,
+        "npmi": 0.13888373377900218,
+        "topic_diversity": 0.9444444444444444
+    },
+    "topics": {
+        "-1": [
+            "anos",
+            "homem",
+            "coluna",
+            "reprodução",
+            "presidente",
+            "bolsonaro",
+            "disse",
+            "durante",
+            "brasil",
+            "caso"
+        ],
+        "0": [
+            "anos",
+            "presidente",
+            "bolsonaro",
+            "lula",
+            "governo",
+            "brasil",
+            "disse",
+            "ministro",
+            "trump",
+            "stf"
+        ],
+        "1": [
+            "israel",
+            "hamas",
+            "gaza",
+            "reféns",
+            "trump",
+            "cessar-fogo",
+            "guerra",
+            "acordo",
+            "israelense",
+            "palestinos"
+        ],
+        "2": [
+            "anos",
+            "banda",
+            "filme",
+            "show",
+            "cinema",
+            "rock",
+            "morreu",
+            "autismo",
+            "música",
+            "pretenders"
+        ],
+        "3": [
+            "endurance",
+            "jogo",
+            "jogos",
+            "site",
+            "copa",
+            "será",
+            "ingressos",
+            "rodada",
+            "palmeiras",
+            "partida"
+        ],
+        "4": [
+            "animais",
+            "animal",
+            "cães",
+            "gatos",
+            "cachorro",
+            "cão",
+            "anos",
+            "pcdf",
+            "filhotes",
+            "drca"
+        ],
+        "5": [
+            "china",
+            "gasolina",
+            "tarifas",
+            "economia",
+            "trump",
+            "preços",
+            "preço",
+            "inflação",
+            "alta",
+            "dólar"
+        ],
+        "6": [
+            "câncer",
+            "mama",
+            "hospital_sírio-libanês",
+            "diagnóstico",
+            "tumor",
+            "mulheres",
+            "tratamento",
+            "pele",
+            "desenvolvida",
+            "anos"
+        ],
+        "7": [
+            "nobel",
+            "prêmio",
+            "física",
+            "medicina",
+            "mary",
+            "descobertas",
+            "brunkow",
+            "imunológico",
+            "john",
+            "milhões"
+        ],
+        "8": [
+            "conhecimento",
+            "vaga",
+            "experiência",
+            "desejável",
+            "planilhas",
+            "habilidade",
+            "computadores",
+            "pautas",
+            "avançado",
+            "coberturas"
+        ]
+    }
+}

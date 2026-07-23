@@ -1,0 +1,273 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-02 21:11:14",
+        "parameters": {
+            "n_topics": [
+                21
+            ],
+            "embedding_model": "all-MiniLM-L6-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.3626473794500136,
+        "adjusted_rand_index": 0.11662278124885603,
+        "normalized_mutual_information": 0.3087149327249932,
+        "npmi": 0.153420363675634,
+        "topic_diversity": 0.835
+    },
+    "topics": {
+        "-1": [
+            "act",
+            "secretary",
+            "requires",
+            "amends",
+            "federal",
+            "state",
+            "program",
+            "directs",
+            "provide",
+            "use"
+        ],
+        "0": [
+            "tax",
+            "education",
+            "act",
+            "program",
+            "amends",
+            "income",
+            "credit",
+            "secretary",
+            "school",
+            "loan"
+        ],
+        "1": [
+            "sec",
+            "information",
+            "act",
+            "security",
+            "secretary",
+            "alien",
+            "requires",
+            "united_states",
+            "report",
+            "intelligence"
+        ],
+        "2": [
+            "secretary",
+            "water",
+            "energy",
+            "land",
+            "act",
+            "requires",
+            "federal",
+            "sec",
+            "oil",
+            "project"
+        ],
+        "3": [
+            "health",
+            "care",
+            "medicare",
+            "services",
+            "act",
+            "coverage",
+            "insurance",
+            "amends",
+            "social",
+            "secretary"
+        ],
+        "4": [
+            "harmonized_tariff",
+            "duty",
+            "schedule",
+            "united_states",
+            "temporarily",
+            "suspend",
+            "amends",
+            "suspension",
+            "extend",
+            "temporary"
+        ],
+        "5": [
+            "small",
+            "business",
+            "agency",
+            "consumer",
+            "sba",
+            "financial",
+            "act",
+            "federal",
+            "rule",
+            "credit"
+        ],
+        "6": [
+            "veterans",
+            "veteran",
+            "care",
+            "secretary",
+            "health",
+            "medical",
+            "service",
+            "members",
+            "services",
+            "disability"
+        ],
+        "7": [
+            "transportation",
+            "faa",
+            "air",
+            "airport",
+            "rail",
+            "service",
+            "carrier",
+            "sec",
+            "fcc",
+            "safety"
+        ],
+        "8": [
+            "drug",
+            "product",
+            "food",
+            "act",
+            "safety",
+            "fda",
+            "requires",
+            "secretary",
+            "drugs",
+            "products"
+        ],
+        "9": [
+            "election",
+            "candidate",
+            "district",
+            "political",
+            "voting",
+            "elections",
+            "voter",
+            "campaign",
+            "contributions",
+            "candidates"
+        ],
+        "10": [
+            "employee",
+            "leave",
+            "labor",
+            "employer",
+            "employees",
+            "act",
+            "compensation",
+            "unemployment",
+            "nlrb",
+            "discrimination"
+        ],
+        "11": [
+            "designates",
+            "united_states_postal_service",
+            "located",
+            "building",
+            "facility",
+            "post",
+            "office",
+            "street",
+            "courthouse",
+            "repeated"
+        ],
+        "12": [
+            "usps",
+            "postal",
+            "delivery",
+            "mail",
+            "stamp",
+            "prc",
+            "post",
+            "office",
+            "requires",
+            "postal_service"
+        ],
+        "13": [
+            "war",
+            "commission",
+            "flag",
+            "commemorative",
+            "memorial",
+            "study",
+            "capitol",
+            "national",
+            "honor",
+            "district_of_columbia"
+        ],
+        "14": [
+            "cuba",
+            "cuban",
+            "travel",
+            "transactions",
+            "export",
+            "president",
+            "act",
+            "telecommunications",
+            "united_states",
+            "trade"
+        ],
+        "15": [
+            "port",
+            "vessel",
+            "saint",
+            "lawrence",
+            "lakes",
+            "great",
+            "seaway",
+            "unloaded",
+            "atlantic",
+            "cargo"
+        ],
+        "16": [
+            "immunization",
+            "map",
+            "unit",
+            "entitled",
+            "barrier",
+            "coastal",
+            "coastal_barrier_resources_act",
+            "maps",
+            "metrics",
+            "wilderness"
+        ],
+        "17": [
+            "insurance",
+            "business",
+            "ferguson",
+            "mccarran",
+            "competition",
+            "antitrust",
+            "health",
+            "unfair",
+            "malpractice",
+            "methods"
+        ],
+        "18": [
+            "presiding",
+            "judge",
+            "witness",
+            "televising",
+            "photographing",
+            "court",
+            "recording",
+            "trial",
+            "broadcasting",
+            "proceeding"
+        ],
+        "19": [
+            "entries",
+            "reliquidate",
+            "liquidate",
+            "border",
+            "cooking",
+            "fiberboard",
+            "protection",
+            "stove",
+            "stainless",
+            "republic_of_korea"
+        ]
+    }
+}

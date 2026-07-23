@@ -1,0 +1,272 @@
+{
+    "metadata": {
+        "model": "prodLDA",
+        "date": "2026-06-25 04:05:09",
+        "parameters": {
+            "n_topics": [
+                21
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.4420162868212648,
+        "adjusted_rand_index": 0.24144522230675172,
+        "normalized_mutual_information": 0.3079759934159323,
+        "npmi": 0.15484886591407757,
+        "topic_diversity": 0.9380952380952381
+    },
+    "topics": {
+        "0": [
+            "assist",
+            "coordinate",
+            "develop",
+            "prevention",
+            "research",
+            "community",
+            "improve",
+            "communities",
+            "address",
+            "director"
+        ],
+        "1": [
+            "act",
+            "program",
+            "state",
+            "secretary",
+            "eligible",
+            "provide",
+            "directs",
+            "assistance",
+            "amends",
+            "tax"
+        ],
+        "2": [
+            "offense",
+            "firearms",
+            "firearm",
+            "criminal",
+            "fine",
+            "crime",
+            "possession",
+            "offenses",
+            "prison",
+            "prosecution"
+        ],
+        "3": [
+            "student",
+            "education",
+            "educational",
+            "school",
+            "students",
+            "higher",
+            "secondary",
+            "elementary",
+            "schools",
+            "teachers"
+        ],
+        "4": [
+            "mortgage",
+            "loan",
+            "loans",
+            "interest",
+            "lending",
+            "capital",
+            "company",
+            "financial",
+            "institution",
+            "securities"
+        ],
+        "5": [
+            "product",
+            "drug",
+            "safety",
+            "products",
+            "cosmetic",
+            "fda",
+            "device",
+            "drugs",
+            "manufacturer",
+            "food"
+        ],
+        "6": [
+            "requires",
+            "health",
+            "care",
+            "small",
+            "program",
+            "indian",
+            "programs",
+            "services",
+            "business",
+            "assistance"
+        ],
+        "7": [
+            "internal",
+            "revenue",
+            "deduction",
+            "code",
+            "taxpayers",
+            "taxable",
+            "allow",
+            "tax",
+            "gross",
+            "taxpayer"
+        ],
+        "8": [
+            "harmonized_tariff",
+            "temporarily",
+            "suspension",
+            "suspend",
+            "acid",
+            "schedule",
+            "footwear",
+            "fibers",
+            "acrylic",
+            "polymer"
+        ],
+        "9": [
+            "medicare",
+            "coverage",
+            "xviii",
+            "social",
+            "medicaid",
+            "physician",
+            "care",
+            "health",
+            "health_and_human_services",
+            "hospital"
+        ],
+        "10": [
+            "veterans_affairs",
+            "armed_forces",
+            "department_of_veterans_affairs",
+            "veteran",
+            "department_of_defense",
+            "member",
+            "connected",
+            "active",
+            "members",
+            "contingency"
+        ],
+        "11": [
+            "fuel",
+            "renewable",
+            "electric",
+            "vehicles",
+            "energy",
+            "electricity",
+            "gas",
+            "solar",
+            "carbon",
+            "fuels"
+        ],
+        "12": [
+            "unobligated",
+            "rescinds",
+            "indicates",
+            "cpi",
+            "migratory",
+            "bureau_of_labor_statistics",
+            "stamp",
+            "biennial",
+            "outlays",
+            "sums"
+        ],
+        "13": [
+            "president",
+            "sense",
+            "countries",
+            "international",
+            "government",
+            "country",
+            "expresses",
+            "foreign",
+            "congress",
+            "iraq"
+        ],
+        "14": [
+            "water",
+            "species",
+            "project",
+            "epa",
+            "environmental",
+            "federal_water_pollution_control_act",
+            "management",
+            "waters",
+            "environmental_protection_agency",
+            "action"
+        ],
+        "15": [
+            "information",
+            "disclosure",
+            "agency",
+            "electronic",
+            "website",
+            "procedures",
+            "internet",
+            "communications",
+            "reports",
+            "election"
+        ],
+        "16": [
+            "land",
+            "lands",
+            "wilderness",
+            "trust",
+            "reservation",
+            "interior",
+            "blm",
+            "conveyance",
+            "convey",
+            "area"
+        ],
+        "17": [
+            "united_states_postal_service",
+            "courthouse",
+            "repeated",
+            "version",
+            "introduced",
+            "avenue",
+            "passed",
+            "summary",
+            "designating",
+            "measure"
+        ],
+        "18": [
+            "employment",
+            "employer",
+            "labor",
+            "status",
+            "nationality",
+            "immigration",
+            "immigrant",
+            "alien",
+            "nonimmigrant",
+            "workers"
+        ],
+        "19": [
+            "requires",
+            "plan",
+            "sec",
+            "report",
+            "federal",
+            "secretary",
+            "employee",
+            "employees",
+            "retirement",
+            "program"
+        ],
+        "20": [
+            "act",
+            "state",
+            "secretary",
+            "security",
+            "amends",
+            "united_states",
+            "including",
+            "directs",
+            "specified",
+            "certain"
+        ]
+    }
+}

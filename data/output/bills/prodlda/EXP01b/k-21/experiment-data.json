@@ -1,0 +1,272 @@
+{
+    "metadata": {
+        "model": "prodLDA",
+        "date": "2026-06-25 04:00:27",
+        "parameters": {
+            "n_topics": [
+                21
+            ]
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.40517945738729705,
+        "adjusted_rand_index": 0.21040244656327522,
+        "normalized_mutual_information": 0.29111601818810773,
+        "npmi": 0.15611916052491712,
+        "topic_diversity": 0.9571428571428572
+    },
+    "topics": {
+        "0": [
+            "education",
+            "educational",
+            "school",
+            "students",
+            "student",
+            "schools",
+            "secondary",
+            "elementary",
+            "higher",
+            "teachers"
+        ],
+        "1": [
+            "interior",
+            "lands",
+            "land",
+            "tribe",
+            "trust",
+            "area",
+            "tribes",
+            "rights",
+            "project",
+            "indian"
+        ],
+        "2": [
+            "gas",
+            "fuel",
+            "energy",
+            "oil",
+            "electric",
+            "production",
+            "renewable",
+            "vehicle",
+            "vehicles",
+            "natural"
+        ],
+        "3": [
+            "research",
+            "director",
+            "coordinate",
+            "develop",
+            "recommendations",
+            "identify",
+            "coordination",
+            "science",
+            "improve",
+            "regional"
+        ],
+        "4": [
+            "health",
+            "care",
+            "coverage",
+            "hhs",
+            "health_and_human_services",
+            "services",
+            "treatment",
+            "public_health_service_act",
+            "medical",
+            "mental"
+        ],
+        "5": [
+            "social",
+            "oasdi",
+            "index",
+            "xviii",
+            "survivors",
+            "social_security",
+            "old",
+            "medicare",
+            "ssi",
+            "ssa"
+        ],
+        "6": [
+            "criminal",
+            "enforcement",
+            "law",
+            "attorney",
+            "dhs",
+            "crime",
+            "sexual",
+            "offense",
+            "penalties",
+            "child"
+        ],
+        "7": [
+            "species",
+            "endangered",
+            "fishery",
+            "threatened",
+            "fisheries",
+            "federal_water_pollution_control_act",
+            "livestock",
+            "discharges",
+            "incidental",
+            "sea"
+        ],
+        "8": [
+            "armed_forces",
+            "veterans_affairs",
+            "veteran",
+            "department_of_veterans_affairs",
+            "department_of_defense",
+            "members",
+            "veterans",
+            "member",
+            "active",
+            "connected"
+        ],
+        "9": [
+            "president",
+            "countries",
+            "foreign",
+            "country",
+            "international",
+            "sense",
+            "united_states",
+            "iran",
+            "expresses",
+            "syria"
+        ],
+        "10": [
+            "employer",
+            "employment",
+            "labor",
+            "employee",
+            "period",
+            "claim",
+            "status",
+            "workers",
+            "date",
+            "employers"
+        ],
+        "11": [
+            "harmonized_tariff",
+            "temporarily",
+            "suspend",
+            "suspension",
+            "acid",
+            "schedule",
+            "footwear",
+            "staple",
+            "fibers",
+            "acrylic"
+        ],
+        "12": [
+            "mortgage",
+            "loan",
+            "loans",
+            "business",
+            "small",
+            "insured",
+            "mortgages",
+            "company",
+            "institution",
+            "lending"
+        ],
+        "13": [
+            "united_states_postal_service",
+            "version",
+            "repeated",
+            "introduced",
+            "summary",
+            "measure",
+            "designates",
+            "courthouse",
+            "amended",
+            "passed"
+        ],
+        "14": [
+            "product",
+            "drug",
+            "device",
+            "cosmetic",
+            "fda",
+            "manufacturer",
+            "labeling",
+            "drugs",
+            "products",
+            "substances"
+        ],
+        "15": [
+            "act",
+            "requires",
+            "plan",
+            "sec",
+            "secretary",
+            "report",
+            "requirements",
+            "including",
+            "directs",
+            "federal"
+        ],
+        "16": [
+            "designee",
+            "delegate",
+            "office_of_inspector_general",
+            "division",
+            "incandescent",
+            "initiation",
+            "acceptance",
+            "uocava",
+            "places",
+            "streamlining"
+        ],
+        "17": [
+            "act",
+            "requires",
+            "program",
+            "programs",
+            "amends",
+            "secretary",
+            "assistance",
+            "state",
+            "federal",
+            "grants"
+        ],
+        "18": [
+            "state",
+            "act",
+            "program",
+            "secretary",
+            "requires",
+            "establish",
+            "provide",
+            "public",
+            "specified",
+            "authorizes"
+        ],
+        "19": [
+            "internal",
+            "revenue",
+            "deduction",
+            "code",
+            "tax",
+            "taxpayers",
+            "taxable",
+            "allow",
+            "taxpayer",
+            "gross"
+        ],
+        "20": [
+            "agency",
+            "rule",
+            "rules",
+            "regulatory",
+            "election",
+            "board",
+            "action",
+            "disclosure",
+            "proposed",
+            "committee"
+        ]
+    }
+}

@@ -1,0 +1,273 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-02 21:12:21",
+        "parameters": {
+            "n_topics": [
+                21
+            ],
+            "embedding_model": "all-MiniLM-L6-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.37341331914783604,
+        "adjusted_rand_index": 0.13513793141708014,
+        "normalized_mutual_information": 0.3276520683139949,
+        "npmi": 0.16759122552727726,
+        "topic_diversity": 0.86
+    },
+    "topics": {
+        "-1": [
+            "act",
+            "secretary",
+            "requires",
+            "amends",
+            "federal",
+            "state",
+            "program",
+            "directs",
+            "sec",
+            "provide"
+        ],
+        "0": [
+            "secretary",
+            "energy",
+            "water",
+            "land",
+            "act",
+            "sec",
+            "requires",
+            "program",
+            "federal",
+            "directs"
+        ],
+        "1": [
+            "education",
+            "programs",
+            "students",
+            "school",
+            "program",
+            "student",
+            "act",
+            "state",
+            "assistance",
+            "grants"
+        ],
+        "2": [
+            "tax",
+            "business",
+            "small",
+            "revenue",
+            "income",
+            "internal",
+            "code",
+            "transportation",
+            "amends",
+            "sec"
+        ],
+        "3": [
+            "act",
+            "information",
+            "agency",
+            "requires",
+            "consumer",
+            "federal",
+            "intelligence",
+            "sec",
+            "mortgage",
+            "security"
+        ],
+        "4": [
+            "health",
+            "medicare",
+            "care",
+            "act",
+            "services",
+            "coverage",
+            "insurance",
+            "amends",
+            "social",
+            "secretary"
+        ],
+        "5": [
+            "sec",
+            "alien",
+            "secretary",
+            "iran",
+            "defense",
+            "united_states",
+            "president",
+            "military",
+            "act",
+            "dod"
+        ],
+        "6": [
+            "harmonized_tariff",
+            "duty",
+            "schedule",
+            "united_states",
+            "temporarily",
+            "suspend",
+            "amends",
+            "suspension",
+            "extend",
+            "temporary"
+        ],
+        "7": [
+            "veterans",
+            "care",
+            "veteran",
+            "secretary",
+            "medical",
+            "service",
+            "health",
+            "member",
+            "military",
+            "members"
+        ],
+        "8": [
+            "product",
+            "food",
+            "drug",
+            "act",
+            "safety",
+            "cosmetic",
+            "firearms",
+            "drugs",
+            "fda",
+            "substance"
+        ],
+        "9": [
+            "labor",
+            "employee",
+            "act",
+            "employer",
+            "discrimination",
+            "nlrb",
+            "miner",
+            "employees",
+            "mining",
+            "operator"
+        ],
+        "10": [
+            "election",
+            "candidate",
+            "political",
+            "voting",
+            "voter",
+            "campaign",
+            "candidates",
+            "contributions",
+            "redistricting",
+            "elections"
+        ],
+        "11": [
+            "designates",
+            "united_states_postal_service",
+            "located",
+            "building",
+            "facility",
+            "post",
+            "street",
+            "office",
+            "courthouse",
+            "repeated"
+        ],
+        "12": [
+            "war",
+            "commission",
+            "commemorative",
+            "flag",
+            "study",
+            "capitol",
+            "memorial",
+            "activities",
+            "national",
+            "honor"
+        ],
+        "13": [
+            "usps",
+            "postal",
+            "stamp",
+            "delivery",
+            "mail",
+            "post",
+            "office",
+            "postal_service",
+            "prc",
+            "requires"
+        ],
+        "14": [
+            "district",
+            "judge",
+            "judges",
+            "ninth_circuit",
+            "circuit",
+            "court",
+            "presiding",
+            "bankruptcy",
+            "temporary",
+            "judgeship"
+        ],
+        "15": [
+            "cuba",
+            "cuban",
+            "travel",
+            "transactions",
+            "export",
+            "president",
+            "act",
+            "trade",
+            "telecommunications",
+            "united_states"
+        ],
+        "16": [
+            "map",
+            "unit",
+            "entitled",
+            "barrier",
+            "coastal_barrier_resources_act",
+            "maps",
+            "replaces",
+            "coastal",
+            "relating",
+            "referred"
+        ],
+        "17": [
+            "life",
+            "human",
+            "moment",
+            "fertilization",
+            "cloning",
+            "vested",
+            "right",
+            "constitution",
+            "guaranteed",
+            "comes"
+        ],
+        "18": [
+            "jerusalem",
+            "israel",
+            "abroad",
+            "buildings",
+            "opened",
+            "officially",
+            "acquisition",
+            "maintenance",
+            "capital",
+            "embassy"
+        ],
+        "19": [
+            "saint",
+            "lawrence",
+            "port",
+            "lakes",
+            "great",
+            "seaway",
+            "unloaded",
+            "cargo",
+            "canada",
+            "loaded"
+        ]
+    }
+}

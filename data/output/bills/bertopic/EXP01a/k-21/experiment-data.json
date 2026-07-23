@@ -1,0 +1,273 @@
+{
+    "metadata": {
+        "model": "BERTopic",
+        "date": "2026-06-02 21:10:06",
+        "parameters": {
+            "n_topics": [
+                21
+            ],
+            "embedding_model": "all-MiniLM-L6-v2"
+        }
+    },
+    "metrics": {
+        "harmonic_purity": 0.38002672266859394,
+        "adjusted_rand_index": 0.14040385077397113,
+        "normalized_mutual_information": 0.3387901999321488,
+        "npmi": 0.15836807151216908,
+        "topic_diversity": 0.845
+    },
+    "topics": {
+        "-1": [
+            "act",
+            "secretary",
+            "requires",
+            "amends",
+            "federal",
+            "program",
+            "sec",
+            "state",
+            "directs",
+            "provide"
+        ],
+        "0": [
+            "secretary",
+            "land",
+            "act",
+            "water",
+            "sec",
+            "requires",
+            "energy",
+            "federal",
+            "program",
+            "directs"
+        ],
+        "1": [
+            "education",
+            "school",
+            "students",
+            "programs",
+            "program",
+            "student",
+            "state",
+            "grants",
+            "act",
+            "child"
+        ],
+        "2": [
+            "health",
+            "medicare",
+            "care",
+            "act",
+            "plan",
+            "services",
+            "amends",
+            "coverage",
+            "social",
+            "insurance"
+        ],
+        "3": [
+            "tax",
+            "credit",
+            "mortgage",
+            "revenue",
+            "internal",
+            "income",
+            "code",
+            "amends",
+            "housing",
+            "property"
+        ],
+        "4": [
+            "act",
+            "information",
+            "agency",
+            "federal",
+            "requires",
+            "consumer",
+            "airport",
+            "sec",
+            "faa",
+            "air"
+        ],
+        "5": [
+            "sec",
+            "alien",
+            "intelligence",
+            "united_states",
+            "iran",
+            "president",
+            "security",
+            "act",
+            "secretary",
+            "congress"
+        ],
+        "6": [
+            "harmonized_tariff",
+            "duty",
+            "schedule",
+            "united_states",
+            "temporarily",
+            "suspend",
+            "amends",
+            "suspension",
+            "extend",
+            "temporary"
+        ],
+        "7": [
+            "veterans",
+            "veteran",
+            "care",
+            "secretary",
+            "health",
+            "medical",
+            "service",
+            "disability",
+            "veterans_affairs",
+            "military"
+        ],
+        "8": [
+            "drug",
+            "product",
+            "food",
+            "fda",
+            "drugs",
+            "act",
+            "safety",
+            "cosmetic",
+            "secretary",
+            "requires"
+        ],
+        "9": [
+            "abortion",
+            "employee",
+            "employer",
+            "leave",
+            "labor",
+            "employees",
+            "act",
+            "discrimination",
+            "nlrb",
+            "federal"
+        ],
+        "10": [
+            "election",
+            "candidate",
+            "political",
+            "committee",
+            "candidates",
+            "contributions",
+            "campaign",
+            "elections",
+            "voting",
+            "federal"
+        ],
+        "11": [
+            "designates",
+            "united_states_postal_service",
+            "located",
+            "building",
+            "facility",
+            "post",
+            "street",
+            "office",
+            "courthouse",
+            "version"
+        ],
+        "12": [
+            "small",
+            "business",
+            "sba",
+            "businesses",
+            "administrator",
+            "sbir",
+            "program",
+            "sttr",
+            "small_business_administration",
+            "sec"
+        ],
+        "13": [
+            "usps",
+            "postal",
+            "post",
+            "delivery",
+            "mail",
+            "stamp",
+            "office",
+            "prc",
+            "postal_service",
+            "employees"
+        ],
+        "14": [
+            "cuba",
+            "cuban",
+            "travel",
+            "transactions",
+            "export",
+            "president",
+            "united_states",
+            "act",
+            "trade",
+            "telecommunications"
+        ],
+        "15": [
+            "district",
+            "judge",
+            "judges",
+            "ninth_circuit",
+            "circuit",
+            "court",
+            "presiding",
+            "bankruptcy",
+            "temporary",
+            "judgeship"
+        ],
+        "16": [
+            "map",
+            "unit",
+            "entitled",
+            "barrier",
+            "coastal_barrier_resources_act",
+            "maps",
+            "replaces",
+            "coastal",
+            "relating",
+            "referred"
+        ],
+        "17": [
+            "atlantic",
+            "striped",
+            "eez",
+            "billfish",
+            "bass",
+            "zone",
+            "rhode_island",
+            "marlin",
+            "spearfish",
+            "point"
+        ],
+        "18": [
+            "tribe",
+            "lumbee",
+            "north_carolina",
+            "recognition",
+            "robeson",
+            "members",
+            "carolina",
+            "trust",
+            "hoke",
+            "indians"
+        ],
+        "19": [
+            "jerusalem",
+            "israel",
+            "abroad",
+            "buildings",
+            "opened",
+            "officially",
+            "acquisition",
+            "maintenance",
+            "capital",
+            "embassy"
+        ]
+    }
+}
